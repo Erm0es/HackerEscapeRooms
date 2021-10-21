@@ -1,0 +1,57 @@
+@import "./menu";
+@import "./menu";
+@import "./pictureContainer";
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  
+}
+
+
+@mixin buttons {
+  background-color: rgb(108, 93, 241);
+  color: white;
+  border: 0;
+  width:150px;
+  height: 50px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+btn1 {
+  @include buttons();
+  position: fixed;
+  
+  
+}
+
+btn2 {
+  @include buttons();
+  position: fixed;
+  
+}
+
+quoteContainer {
+  grid-column-start:1;
+  grid-column-end: -1;
+ background-color: beige;
+}
+
+secondHeader {
+  background-color: blueviolet;
+}
+
+challengeOpt {
+  background-color: fuchsia;
+}
+
+story {
+  background-color: darkblue;
+}
+booking {
+  background-color: darkolivegreen;
+}
+footer {
+  background-color: aquamarine;
+}

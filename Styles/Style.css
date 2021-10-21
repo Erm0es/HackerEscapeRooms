@@ -1,1 +1,106 @@
-/* No CSS *//*# sourceMappingURL=Style.css.map */
+header {
+      grid-column-start: 1;
+  grid-column-end: -1;
+  font-size: xx-large;
+  position: fixed;
+  left: 50px;
+}
+
+.circle {
+  background-color: blueviolet;
+  height: 40px;
+  width: 40px;
+  border-radius: 30px 30px 30px 30px;
+  position: fixed;
+}
+
+menu {
+      grid-column-start: 3;
+  grid-column-end: 9;
+      grid-row-start: 4;
+}
+
+menu ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+menu li {
+  margin: 0 10px;
+}
+
+menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.pictureContainer {
+  background-color: #dadaec;
+      grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.container {
+  
+  display: grid;
+  
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(auto);
+}
+
+.btn1 {
+  background-color: #7768f7;
+  color: white;
+  border: 0;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px 10px 10px 10px;
+  position: fixed;
+  top: 50%;
+  left: 33%;
+}
+
+.btn2 {
+  background-color: #7768f7;
+  color: white;
+  border: 0;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px 10px 10px 10px;
+  position: fixed;
+  top: 50%;
+  right: 33%;
+}
+
+quoteContainer {
+ 
+      grid-column-start: 1;
+  grid-column-end: -1;
+  background-color: beige;
+}
+
+secondHeader {
+  background-color: blueviolet;
+}
+
+challengeOpt {
+  background-color: fuchsia;
+}
+
+story {
+  background-color: darkblue;
+}
+
+booking {
+  background-color: darkolivegreen;
+}
+
+footer {
+  background-color: aquamarine;
+}
+/*# sourceMappingURL=Style.css.map */
