@@ -1,3 +1,4 @@
+$Maincolor: rgb(74, 74, 153);
 
 @mixin buttons {
   background-color: $Maincolor;
@@ -12,10 +13,8 @@
 
 .btn1 {
   @include buttons();
-  margin-left: 600px;
 }
 
 .btn2 {
   @include buttons();
-  margin-left: 10px;
 }
