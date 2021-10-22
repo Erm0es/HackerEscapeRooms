@@ -1,5 +1,11 @@
 .pictureContainer {
-  background-color: #f82e0a;
-  grid-column-start: 5;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: 20px auto auto auto auto 20px;
+  grid-column-start: 1;
   grid-column-end: -1;
+  height: 400px;
+  width: 100%;
+  background-color: #9190a3;
+  text-align: center;
 }

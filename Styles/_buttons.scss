@@ -1,0 +1,21 @@
+
+@mixin buttons {
+  background-color: $Maincolor;
+  color: white;
+  width: 300px;
+  height: 50px;
+  border: 0;
+  border-radius: 5px 5px 5px 5px;
+  margin-top: -1000px;
+  justify-content: center;
+}
+
+.btn1 {
+  @include buttons();
+  margin-left: 600px;
+}
+
+.btn2 {
+  @include buttons();
+  margin-left: 10px;
+}

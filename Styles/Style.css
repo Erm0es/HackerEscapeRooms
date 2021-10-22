@@ -1,23 +1,31 @@
 header {
+  display: -ms-grid;
+  display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: auto;
       grid-column-start: 1;
   grid-column-end: -1;
-  font-size: xx-large;
-  position: fixed;
-  left: 50px;
+}
+
+h1 {
+      grid-column-start: 2;
+  grid-column-end: -1;
+  font-size: xxx-large;
+  font-weight: lighter;
 }
 
 .circle {
-  background-color: blueviolet;
-  height: 40px;
-  width: 40px;
-  border-radius: 30px 30px 30px 30px;
-  position: fixed;
-}
-
-menu {
-      grid-column-start: 3;
-  grid-column-end: 9;
-      grid-row-start: 4;
+  
+      grid-column-start: 1;
+  grid-column-end: 1;
+      grid-row-start: 1;
+  position: relative;
+  top: 20px;
+  left: 30px;
+  background-color: #a46ce4;
+  height: 80px;
+  width: 80px;
+  border-radius: 40px 40px 40px 40px;
 }
 
 menu ul {
@@ -25,75 +33,175 @@ menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
 }
 
 menu li {
-  margin: 0 10px;
+  margin: 0 100px;
+  padding: 0 30px;
 }
 
 menu a {
   text-decoration: none;
   color: black;
+  font-size: 20px;
 }
 
 .pictureContainer {
-  background-color: #dadaec;
-      grid-column-start: 1;
-  grid-column-end: -1;
-}
-
-.container {
-  
+  display: -ms-grid;
   display: grid;
   
-      grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(auto);
+      grid-template-columns: repeat(6, 1fr);
+  
+      grid-template-rows: 20px auto auto auto auto 20px;
+  
+      grid-column-start: 1;
+  grid-column-end: -1;
+  height: 400px;
+  width: 100%;
+  background-color: #9190a3;
+  text-align: center;
 }
 
 .btn1 {
-  background-color: #7768f7;
+  background-color: #4a4a99;
   color: white;
-  border: 0;
-  width: 150px;
+  width: 300px;
   height: 50px;
-  border-radius: 10px 10px 10px 10px;
-  position: fixed;
-  top: 50%;
-  left: 33%;
+  border: 0;
+  border-radius: 5px 5px 5px 5px;
+  margin-top: -1000px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 600px;
 }
 
 .btn2 {
-  background-color: #7768f7;
+  background-color: #4a4a99;
   color: white;
-  border: 0;
-  width: 150px;
+  width: 300px;
   height: 50px;
-  border-radius: 10px 10px 10px 10px;
-  position: fixed;
-  top: 50%;
-  right: 33%;
+  border: 0;
+  border-radius: 5px 5px 5px 5px;
+  margin-top: -1000px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 10px;
 }
 
-quoteContainer {
+blockquote {
+  display: -ms-grid;
+  display: grid;
  
-      grid-column-start: 1;
+      grid-template-columns: repeat(6, 1fr);
+  
+      grid-template-rows: auto;
+}
+
+.blockquote_text {
+  font-size: x-large;
+  margin: 60px 40px;
+  padding: 50px 50px;
+ 
+      grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.blockquote_scnText {
+  font-size: x-large;
+  margin: 60px 40px;
+  padding: 50px 50px;
+ 
+      grid-column-start: 4;
   grid-column-end: -1;
-  background-color: beige;
+}
+
+.Name1 {
+  font-size: large;
+  padding-left: 90px;
+  margin-top: -100px;
+  
+      grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.Name2 {
+  font-size: large;
+  padding-left: 90px;
+  margin-top: -100px;
+  
+      grid-column-start: 4;
+  grid-column-end: -1;
+}
+
+.Pic1 {
+ 
+  background-image: linear-gradient(lightblue, gray);
+  height: 100px;
+  width: 100px;
+  border-radius: 80px 80px 80px 80px;
+  position: relative;
+  bottom: 200px;
+  right: 30px;
+  
+      grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.Pic2 {
+  
+  background-image: linear-gradient(lightblue, gray);
+  height: 100px;
+  width: 100px;
+  border-radius: 80px 80px 80px 80px;
+  position: relative;
+  bottom: 200px;
+  right: 30px;
+  
+      grid-column-start: 4;
+  grid-column-end: -1;
+}
+
+.challengeOpt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border-style: solid;
 }
 
 secondHeader {
-  background-color: blueviolet;
-}
-
-challengeOpt {
-  background-color: fuchsia;
+  display: -ms-grid;
+  display: grid;
+  
+      grid-column-start: 1;
+  grid-column-end: -1;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 story {
-  background-color: darkblue;
+  background-color: #00098b;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 12, 1fr;
+      grid-template-columns: 12, 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-column-start: 1;
+  grid-column-end: -1;
 }
 
 booking {
