@@ -32,7 +32,7 @@ h1 {
   background-color: #a46ce4;
   height: 80px;
   width: 80px;
-  border-radius: 40px 40px 40px 40px;
+  border-radius: 40px;
 }
 
 menu ul {
@@ -224,6 +224,39 @@ button {
   border-radius: 4px;
 }
 
+ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 100px 460px;
+}
+
+ul li.allChallenges a {
+  font-size: 20px;
+  color: #4a4a99;
+  border-style: solid;
+  padding: 10px 60px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+story {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 100px 300px;
+  padding: 0px 20px;
+  height: 300px;
+}
+
+story .button.Rd_Sty {
+  background-color: red;
+}
+
 .container {
   text-align: center;
 }
@@ -237,19 +270,6 @@ secondHeader {
   font-size: 40px;
   text-align: center;
   margin-bottom: 50px;
-}
-
-story {
-  background-color: #8b000c;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 12, 1fr;
-      grid-template-columns: 12, 1fr;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: -1;
 }
 
 booking {
