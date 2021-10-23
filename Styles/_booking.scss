@@ -1,0 +1,59 @@
+.booking{
+  display: flex;
+  margin-top:300px;
+  height: auto;
+  width: auto;
+}
+
+//imgbox
+@mixin img {
+  height: 50%;
+  width: 100%;
+}
+img.pic0 {
+  @include img();
+  
+  
+}
+img.pic1 {
+  @include img();
+  margin-top: -200px;
+  
+}
+
+//Text
+.BookingtextBox{
+  text-align: left;
+  padding: 100px 80px;
+  height: 50%;
+  margin: 0;
+  
+}
+.bookingHeading{
+  font-size: 40px;
+
+ 
+}
+
+.textBook {
+  font-size: 20px;
+}
+
+//Buttons
+@mixin bookingBtn {
+ margin: 0;
+ padding: 10px;
+}
+
+.bookBtn0 {
+  @include bookingBtn();
+  margin-right: 50px;
+}
+
+.bookBtn1 {
+  @include bookingBtn();
+}
+
+.bookBtn2 {
+  @include bookingBtn();
+}

@@ -1,10 +1,29 @@
-story {
-    display: flex;
-    margin: 100px 300px;
-    padding: 0px 20px;
-    height: 300px;
+$Maincolor: rgb(74, 74, 153);
 
-    .button.Rd_Sty{
-       background-color: red;;
-    }
-  }
+.story {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  align-items: center;
+  margin-top: 10%;
+  
+  padding: 40px;
+}
+h3.Story {
+  font-size: 30px;
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+button.Rd_Sty {
+  align-items: center;
+  padding: 5px 40px;
+  background-color: white;
+  color: $Maincolor;
+  border: solid $Maincolor;
+  margin-left: 40px;
+
+  
+
+}

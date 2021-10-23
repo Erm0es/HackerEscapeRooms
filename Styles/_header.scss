@@ -4,25 +4,26 @@ header {
   grid-template-rows: auto;
   grid-column-start: 1;
   grid-column-end: -1;
-}
 
-h1 {
-  grid-column-start: 1;
-  grid-column-end: -1;
-  grid-row-start: 1;
-  font-size: xxx-large;
-  font-weight: lighter; 
-}
+  h1 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    font-size: xxx-large;
+    font-weight: lighter;
+    margin-left: -800px;
+  }
 
-.circle {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  position: relative;
-  top: 20px;
-  left: 30px;
-  background-color: rgb(164, 108, 228);
-  height: 80px;
-  width: 80px;
-  border-radius: 40px;
+  .circle {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    position: relative;
+    top: 20px;
+    left: 30px;
+    background-color: rgb(164, 108, 228);
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+  }
 }

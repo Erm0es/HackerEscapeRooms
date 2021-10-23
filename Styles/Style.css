@@ -1,30 +1,31 @@
 header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[12];
+ 
       grid-template-columns: repeat(12, 1fr);
-  -ms-grid-rows: auto;
+ 
       grid-template-rows: auto;
-  -ms-grid-column: 1;
+  
       grid-column-start: 1;
   grid-column-end: -1;
 }
 
-h1 {
-  -ms-grid-column: 1;
+header h1 {
+ 
       grid-column-start: 1;
   grid-column-end: -1;
-  -ms-grid-row: 1;
+  
       grid-row-start: 1;
   font-size: xxx-large;
   font-weight: lighter;
+  margin-left: -800px;
 }
 
-.circle {
-  -ms-grid-column: 1;
+header .circle {
+  
       grid-column-start: 1;
   grid-column-end: 1;
-  -ms-grid-row: 1;
+  
       grid-row-start: 1;
   position: relative;
   top: 20px;
@@ -44,6 +45,7 @@ menu ul {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0;
+  margin: 0;
 }
 
 menu li {
@@ -60,16 +62,16 @@ menu a {
 .pictureContainer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
+  
       grid-template-columns: repeat(6, 1fr);
-  -ms-grid-rows: 20px auto auto auto auto 20px;
+  
       grid-template-rows: 20px auto auto auto auto 20px;
-  -ms-grid-column: 1;
+ 
       grid-column-start: 1;
   grid-column-end: -1;
   height: 400px;
   width: 100%;
-  background-color: #9190a3;
+  background-image: url(/Pictures/hacking-dea.jpg);
   text-align: center;
 }
 
@@ -102,9 +104,9 @@ menu a {
 blockquote {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
+  
       grid-template-columns: repeat(6, 1fr);
-  -ms-grid-rows: auto;
+ 
       grid-template-rows: auto;
 }
 
@@ -112,7 +114,7 @@ blockquote {
   font-size: x-large;
   margin: 60px 40px;
   padding: 50px 50px;
-  -ms-grid-column: 2;
+ 
       grid-column-start: 2;
   grid-column-end: 4;
 }
@@ -121,7 +123,7 @@ blockquote {
   font-size: x-large;
   margin: 60px 40px;
   padding: 50px 50px;
-  -ms-grid-column: 4;
+  
       grid-column-start: 4;
   grid-column-end: -1;
 }
@@ -130,7 +132,7 @@ blockquote {
   font-size: large;
   padding-left: 90px;
   margin-top: -100px;
-  -ms-grid-column: 2;
+  
       grid-column-start: 2;
   grid-column-end: 4;
 }
@@ -139,13 +141,13 @@ blockquote {
   font-size: large;
   padding-left: 90px;
   margin-top: -100px;
-  -ms-grid-column: 4;
+  
       grid-column-start: 4;
   grid-column-end: -1;
 }
 
 .Pic1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(lightblue), to(gray));
+  
   background-image: linear-gradient(lightblue, gray);
   height: 100px;
   width: 100px;
@@ -153,13 +155,13 @@ blockquote {
   position: relative;
   bottom: 200px;
   right: 30px;
-  -ms-grid-column: 2;
+  
       grid-column-start: 2;
   grid-column-end: 4;
 }
 
 .Pic2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(lightblue), to(gray));
+  
   background-image: linear-gradient(lightblue, gray);
   height: 100px;
   width: 100px;
@@ -167,7 +169,7 @@ blockquote {
   position: relative;
   bottom: 200px;
   right: 30px;
-  -ms-grid-column: 4;
+  
       grid-column-start: 4;
   grid-column-end: -1;
 }
@@ -232,7 +234,7 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 100px 460px;
+  margin: 100px 550px;
 }
 
 ul li.allChallenges a {
@@ -244,17 +246,90 @@ ul li.allChallenges a {
   border-radius: 3px;
 }
 
-story {
+.story {
+  display: -ms-grid;
+  display: grid;
+  
+      grid-template-columns: repeat(6, 1fr);
+ 
+      grid-template-rows: auto;
+  
+      grid-column-start: 1;
+  grid-column-end: -1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10%;
+  padding: 40px;
+}
+
+h3.Story {
+  font-size: 30px;
+  
+      grid-column-start: 2;
+  grid-column-end: 6;
+}
+
+button.Rd_Sty {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 40px;
+  background-color: white;
+  color: #4a4a99;
+  border: solid #4a4a99;
+  margin-left: 40px;
+}
+
+.booking {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 100px 300px;
-  padding: 0px 20px;
-  height: 300px;
+  margin-top: 300px;
+  height: auto;
+  width: auto;
 }
 
-story .button.Rd_Sty {
-  background-color: red;
+img.pic0 {
+  height: 50%;
+  width: 100%;
+}
+
+img.pic1 {
+  height: 50%;
+  width: 100%;
+  margin-top: -200px;
+}
+
+.BookingtextBox {
+  text-align: left;
+  padding: 100px 80px;
+  height: 50%;
+  margin: 0;
+}
+
+.bookingHeading {
+  font-size: 40px;
+}
+
+.textBook {
+  font-size: 20px;
+}
+
+.bookBtn0 {
+  margin: 0;
+  padding: 10px;
+  margin-right: 50px;
+}
+
+.bookBtn1 {
+  margin: 0;
+  padding: 10px;
+}
+
+.bookBtn2 {
+  margin: 0;
+  padding: 10px;
 }
 
 .container {
@@ -264,7 +339,7 @@ story .button.Rd_Sty {
 secondHeader {
   display: -ms-grid;
   display: grid;
-  -ms-grid-column: 1;
+ 
       grid-column-start: 1;
   grid-column-end: -1;
   font-size: 40px;
@@ -272,11 +347,17 @@ secondHeader {
   margin-bottom: 50px;
 }
 
-booking {
-  background-color: darkolivegreen;
-}
-
 footer {
-  background-color: aquamarine;
+  background-color: gray;
+  display: -ms-grid;
+  display: grid;
+  
+      grid-template-columns: repeat(12, 1f);
+ 
+      grid-template-rows: auto;
+ 
+      grid-column-start: 1;
+  grid-column-end: -1;
+  height: 300px;
 }
 /*# sourceMappingURL=Style.css.map */

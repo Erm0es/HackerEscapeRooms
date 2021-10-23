@@ -8,10 +8,11 @@
 
 @import "./allChallenges";
 @import "./story";
+@import "./booking";
 
 
 $Maincolor: rgb(74, 74, 153);
-$MainColorGray: rgb(155, 148, 194);
+$MainColorGray: rgb(98, 97, 102);
 
 .container{
   text-align: center;
@@ -26,9 +27,13 @@ secondHeader {
   margin-bottom: 50px;
 }
 
-booking {
-  background-color: darkolivegreen;
-}
+
 footer {
-  background-color: aquamarine;
+  background-color: gray;
+  display: grid;
+  grid-template-columns: repeat(12,1f);
+  grid-template-rows: auto;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  height: 300px;
 }
