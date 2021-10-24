@@ -1,47 +1,43 @@
 $MainColorGray: rgb(155, 148, 194);
 $Maincolor: rgb(74, 74, 153);
 
-.challengeOpt{
+.challengeOpt {
   display: flex;
-  justify-content: space-evenly;
   text-align: left;
+  justify-content: space-evenly;
   margin: 0px 200px;
 }
-
-.card{
+.card {
   border: solid $MainColorGray;
-  
 }
-img{
-  width: 360px;
+img {
   height: 250px;
+  width: 360px;
+  padding: 0;
   object-fit: cover;
-  padding:0;
 }
-h3{
- font-size: 30px;
- color: $MainColorGray;
- padding-left: 5px;
- margin: 5px 0px;
-}
-small{
+h3 {
+  font-size: 30px;
+  margin: 5px 0px;
   padding-left: 5px;
+  color: $MainColorGray;
+}
+small {
   font-size: 15px;
-}
-p{
   padding-left: 5px;
-  font-size: 16px;
 }
-button{
-  margin-left:100px;
+p {
+  font-size: 16px;
+  padding-left: 5px;
+}
+button {
+  width: 250px;
+  font-size: 20px;
+  margin-left: 100px;
   margin-bottom: 10px;
   padding: 4px;
-  background-color: $Maincolor;
-  color:white;
-  border-style: none;
-  font-size: 20px;
-  width: 250px;
   border-radius: 4px;
-  
+  border-style: none;
+  background-color: $Maincolor;
+  color: white;
 }
-

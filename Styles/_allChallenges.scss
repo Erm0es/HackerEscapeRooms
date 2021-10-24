@@ -1,19 +1,18 @@
 $Maincolor: rgb(74, 74, 153);
 
 ul {
-  list-style: none;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   margin: 100px 550px;
-
+  list-style: none;
   li.allChallenges {
     a {
-      font-size: 20px;
-      color: $Maincolor;
-      border-style: solid;
       padding: 10px 60px;
-      text-decoration: none;
+      font-size: 20px;
       border-radius: 3px;
+      border-style: solid;
+      color: $Maincolor;
+      text-decoration: none;
     }
   }
 }
