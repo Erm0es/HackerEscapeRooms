@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel = "stylesheet" href = "./Styles/Style.css">
+    <link rel="stylesheet" href="./Styles/Style.css">
 </head>
+
 <body>
-    <div class="container"> 
+    <div class="container">
         <header class="header">
             <h1>[Esc] Hacker Escape Rooms</h1>
             <div class="circle"></div>
         </header>
-        <!--sektioner ist för div?-->
-        <menu class="class"> <!--nav-->
+        <!--sektioner ist för div!-->
+        <menu class="class">
+            <!--nav-->
             <ul>
                 <li><a href="url">Play online</a></li>
                 <li><a href="url">Play on-site</a></li>
@@ -23,109 +26,130 @@
             </ul>
         </menu>
 
-        <hero class="hero"> <!--HERO-->
+        <hero class="hero">
             <!--aria-->
         </hero>
-        <!--länk eller button-->
-        <button class="btn1"> &#128187; Online challenges</button>
-        <button class="btn2"> &#127968; On-site challenges</button>
 
-        <!--Lägg systematiskt,sektion? Figure? blockquote -->
-        <blockquote class="blockquote"> 
-            <p class="blockquote_text">
-                This awesome quote from this awesome person who rly likes this.
-                awesome yes mucho gracias very cool.
-            </p>
-            <p class="blockquote_scnText">
-                Awesome.Awesome.Awesome.Awesome.
-                Awesome.Awesome.Awesome.Awesome.
-                Awesome.Awesome.vAwesome.Awesome.
-                Awesome.Awesome.
-            </p>
-            <name class="Name1">-DragonSlayerxX</name> <!--cite-->
-            <name class="Name2">-1337VeryCool</name>
-            <div class="Pic1"></div>
-            <div class="Pic2"></div>
+        <ul class="proceedLinks">
+            <li><a herf="url" role="button">&#128187; Online challenges</a></li>
+            <li><a herf="url" role="button">&#127968; On-site challenges</a></li>
+        </ul>
+
+        <blockquote class="blockquote">
+            <div class="block">
+                <img class="picture1" src="Pictures/person-circle.png">
+                <p class="quote1">
+                    This is a quote about how amazing this place is and how much fun me and my friends had when we tried
+                    it
+                </p>
+                <small class="Author1">- Quote Author</small>
+            </div>
+            <div class="block">
+                <img class="picture2" src="Pictures/person-circle.png">
+                <p class="quote2">
+                    This is a quote about how amazing this place is and how much fun me and my friends had when we tried
+                    it
+                </p>
+                <small class="Author2">- Quote Author</small>
+            </div>
         </blockquote>
 
-        <secondHeader class="scnHeader"> <!--Ner till challengeOpt-->
+        <secondHeader class="scnHeader">
             Popular challenges right now
         </secondHeader>
 
-        <challengeOpt class="challengeOpt">
-            <div class="card"> 
-                <img src="https://picsum.photos/350/250" ></img>
-                <h3>Title of challenge</h3>
-                <small>2 participants (networked)</small>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <button>Take challenge online</button><!--länkar?-->
+        <challengeOpt class="popularChallenges">
+            <div class="card">
+                <img src="https://picsum.photos/350/250"></img>
+                <div class="textBox">
+                    <h3>Title of challenge</h3>
+                    <small>2 participants (networked)</small>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim
+                        veniam
+                    </p>
+                    <button type="button">Take challenge online</button>
+                </div>
             </div>
             <div class="card">
                 <img src="https://picsum.photos/350/250"></img>
-                <h3>Title of challenge</h3>
-                <small>2-6 participants</small>
-                <p>Phasellus efficitur accumsan tellus, vitae rutrum sapien.</p>
-                <button>Book this room</button>
+                <div class="textBox">
+                    <h3>Title of challenge</h3>
+                    <small>2-6 participants</small>
+                    <p>Phasellus efficitur accumsan tellus, vitae rutrum sapien. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim
+                        veniam
+                    </p>
+                    <button type="button">Book this room</button>
+                </div>
             </div>
             <div class="card">
                 <img src="https://picsum.photos/350/250"></img>
-                <h3>Title of challenge</h3>
-                <small>2-6 participants</small>
-                <p>Fusce ac orci sit amet elit gravida volutpat ac non mi. </p>
-                <button>Book this room</button>
+                <div class="textBox">
+                    <h3>Title of challenge</h3>
+                    <small>2-6 participants</small>
+                    <p>Fusce ac orci sit amet elit gravida volutpat ac non mi. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim
+                        veniam 
+                    </p>
+                    <button type="button">Book this room</button>
+                </div>
             </div>
         </challengeOpt>
-            
-        <ul> <!--upp i challenge?-->
-            <li class = "allChallenges"><a href="Link">&#128187; All online challenges</a></li>
-            <li class = "allChallenges"><a href="Link">&#127968; All on-site challenges</a></li>
-        </ul>
-           
-        <story class="story"> <!--AreaLable?-->
-            <h3 class="Story">
-                Phasellus efficitur accumsan tellus, vitae rutrum sapien sodales sit amet.
-                 Fusce ac orci sit amet elit gravida volutpat ac non mi. Integer sit amet risus turpis.
-                 Nulla at finibus nulla. Mauris risus libero, 
-                </h3>
-        </story>
-        <button class="Rd_Sty">Read the full story</button> <!--upp?^ länk?-->
-        
-        
 
-    <booking class="booking">
-        <div class="bookBox0">
-            <img class="pic0" src="https://picsum.photos/350/250"></img>
-            <div class="BookingtextBox">
-                <h3 class="bookingHeading">Play online or visit our venue for one of our 25 escape rooms</h3>
-                <p class="textBook">Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                </p>
-                <button class="bookBtn0">&#128187 Play online</button>
-                <button class="bookBtn1">&#127968 Book on-site</button>
-            </div>
-        </div>
-        <div class="bookBox1">
-            <div class="BookingtextBox">
-                <h3 class="bookingHeading">Play with your friends or
-                     build your team stronger at work</h3>
-                <p class="textBook">Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                </p>
-                <button class="bookBtn2">Book on-site today</button>
+        <ul>
+            <li class="allChallenges"><a href="Link" role="button">&#128187; All online challenges</a></li>
+            <li class="allChallenges"><a href="Link" role="button">&#127968; All on-site challenges</a></li>
+        </ul>
+
+        <story class="story">
+            <h3 class="story">
+                Phasellus efficitur accumsan tellus, vitae rutrum sapien sodales sit amet.
+                Fusce ac orci sit amet elit gravida volutpat ac non mi. Integer sit amet risus turpis.
+                Nulla at finibus nulla. Mauris risus libero
+            </h3>
+            <button type="button" >Read the full story</button>
+        </story>
+
+        <booking class="booking">
+            <div class="bookBox0">
+                <img class="pic0" src="https://picsum.photos/350/250"></img>
+                <div class="BookingtextBox">
+                    <h3 class="bookingHeading">Play online or visit our venue for one of our 25 escape rooms</h3>
+                    <p class="textBook">Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo.
+                    </p>
+                    <button type="button" id="bookBtn0">&#128187 Play online</button>
+                    <button type="button" id="bookBtn1">&#127968 Book on-site</button>
                 </div>
-            <img class="pic1" src="https://picsum.photos/350/250"></img>
-        </div>
-    </booking>
+            </div>
+            <div class="bookBox1">
+                <div class="BookingtextBox">
+                    <h3 class="bookingHeading">Play with your friends or
+                        build your team stronger at work</h3>
+                    <p class="textBook">Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo.
+                    </p>
+                    <button type="button" id="bookBtn2">Book on-site today</button>
+                </div>
+                <img class="pic1" src="https://picsum.photos/350/250"></img>
+            </div>
+        </booking>
 
 
         <footer class="footer">
             footer
         </footer>
-   
 
-    <script src="Script.js"></script>
+    </div>
+        <script src="Script.js"></script>
 </body>
 
 </html>

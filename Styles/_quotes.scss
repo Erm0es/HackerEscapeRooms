@@ -1,64 +1,49 @@
-//Quote
-@mixin QuoteBox {
-  font-size: x-large;
-  margin: 60px 40px;
-  padding: 50px 50px;
-}
 blockquote {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: auto;
-}
-.blockquote_text {
-  @include QuoteBox();
-  grid-column-start: 2;
-  grid-column-end: 4;
-}
+  display: flex;
+  justify-content: center;
+  margin: 0px 250px;
+  margin-bottom: 200px;
 
-.blockquote_scnText {
-  @include QuoteBox();
-  grid-column-start: 4;
-  grid-column-end: -1;
-}
-//Name
-@mixin NameBox {
-  font-size: large;
-  padding-left: 90px;
-  margin-top: -100px;
-}
-.Name1 {
-  @include NameBox();
-  grid-column-start: 2;
-  grid-column-end: 4;
-}
-.Name2 {
-  @include NameBox();
-  grid-column-start: 4;
-  grid-column-end: -1;
-}
+  //Picture
+  @mixin pic {
+    position: relative;
+    top: 100px;
+    height: 150px;
+    width: 150px;
+  }
+  img.picture1 {
+    @include pic();
+  }
+  img.picture2 {
+    @include pic();
+  }
 
-//picture
-@mixin PersonPic {
-  background-image: linear-gradient(lightblue, gray);
-  height: 100px;
-  width: 100px;
-  border-radius: 80px 80px 80px 80px;
-  position: relative;
-  bottom: 200px;
-  right: 30px;
+  //Revew
+  @mixin p {
+    position: relative;
+    left: 100px;
+    font-size: 25px;
+    margin: 0 100px;
+  }
+  p.quote1 {
+    @include p();
+  }
+  p.quote2 {
+    @include p();
+  }
+
+  //Author
+  @mixin Author {
+    position: relative;
+    top: 5px;
+    left: 200px;
+    font-size: 20px;
+  }
+  small.Author1 {
+    @include Author();
+  }
+
+  small.Author2 {
+    @include Author();
+  }
 }
-
-.Pic1 {
-  @include PersonPic();
-  grid-column-start: 2;
-  grid-column-end: 4;
-}
-.Pic2 {
-  @include PersonPic();
-  grid-column-start: 4;
-  grid-column-end: -1;
-}
-
-
-
-//som med challenges fast horisotellt? 

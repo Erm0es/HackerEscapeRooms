@@ -1,29 +1,27 @@
 $Maincolor: rgb(74, 74, 153);
 
 .story {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: auto;
-  grid-column-start: 1;
-  grid-column-end: -1;
-  align-items: center;
-  margin-top: 10%;
+  text-align: center;
+  margin: 0%;
+  margin-top: 200px;
   
-  padding: 40px;
-}
-h3.Story {
+ h3.story {
   font-size: 30px;
-  grid-column-start: 2;
-  grid-column-end: 6;
-}
-button.Rd_Sty {
-  align-items: center;
-  padding: 5px 40px;
+  padding: 0px 400px;
+ }
+ 
+ button {
+  position: relative;
+  top:60px;
+  left:865px;
+  font-size: 15px;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
   background-color: white;
   color: $Maincolor;
   border: solid $Maincolor;
-  margin-left: 40px;
-
+  border-radius: 6px;
   
-
+ }
 }

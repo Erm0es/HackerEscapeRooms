@@ -1,0 +1,17 @@
+$Maincolor: rgb(74, 74, 153);
+
+ul.proceedLinks {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -15px;
+
+  li {
+    a {
+      font-size: 25px;
+      padding: 10px 30px;
+      border-radius: 5px;
+      background-color: $Maincolor;
+      color: white;
+    }
+  }
+}
