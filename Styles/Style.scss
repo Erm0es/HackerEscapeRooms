@@ -1,6 +1,6 @@
 @import "./header";
 @import "./menu";
-@import "./pictureContainer";
+@import "./hero";
 
 @import "./buttons";
 @import "./quotes";
@@ -13,10 +13,6 @@
 
 $Maincolor: rgb(74, 74, 153);
 $MainColorGray: rgb(98, 97, 102);
-
-.container{
-  text-align: center;
-}
 
 secondHeader {
   display: grid;

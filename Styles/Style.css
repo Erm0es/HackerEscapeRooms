@@ -1,51 +1,50 @@
 header {
   display: -ms-grid;
   display: grid;
- 
+  -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
- 
+  -ms-grid-rows: auto;
       grid-template-rows: auto;
-  
+  -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: -1;
 }
 
 header h1 {
- 
-      grid-column-start: 1;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
   grid-column-end: -1;
-  
+  -ms-grid-row: 1;
       grid-row-start: 1;
   font-size: xxx-large;
   font-weight: lighter;
-  margin-left: -800px;
 }
 
 header .circle {
-  
+  -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 1;
-  
+  -ms-grid-row: 1;
       grid-row-start: 1;
   position: relative;
   top: 20px;
   left: 30px;
-  background-color: #a46ce4;
   height: 80px;
   width: 80px;
   border-radius: 40px;
+  background-color: #a46ce4;
 }
 
 menu ul {
-  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 menu li {
@@ -54,59 +53,58 @@ menu li {
 }
 
 menu a {
+  font-size: 20px;
   text-decoration: none;
   color: black;
-  font-size: 20px;
 }
 
-.pictureContainer {
+.hero {
   display: -ms-grid;
   display: grid;
-  
+  -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
-  
+  -ms-grid-rows: 20px auto auto auto auto 20px;
       grid-template-rows: 20px auto auto auto auto 20px;
- 
+  -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: -1;
-  height: 400px;
+  height: 500px;
   width: 100%;
   background-image: url(/Pictures/hacking-dea.jpg);
-  text-align: center;
 }
 
 .btn1 {
-  background-color: #4a4a99;
-  color: white;
-  width: 300px;
-  height: 50px;
-  border: 0;
-  border-radius: 5px 5px 5px 5px;
-  margin-top: -1000px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 50px;
+  width: 300px;
+  margin-top: -1000px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #4a4a99;
+  color: white;
 }
 
 .btn2 {
-  background-color: #4a4a99;
-  color: white;
-  width: 300px;
-  height: 50px;
-  border: 0;
-  border-radius: 5px 5px 5px 5px;
-  margin-top: -1000px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 50px;
+  width: 300px;
+  margin-top: -1000px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #4a4a99;
+  color: white;
 }
 
 blockquote {
   display: -ms-grid;
   display: grid;
-  
+  -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
- 
+  -ms-grid-rows: auto;
       grid-template-rows: auto;
 }
 
@@ -114,7 +112,7 @@ blockquote {
   font-size: x-large;
   margin: 60px 40px;
   padding: 50px 50px;
- 
+  -ms-grid-column: 2;
       grid-column-start: 2;
   grid-column-end: 4;
 }
@@ -123,7 +121,7 @@ blockquote {
   font-size: x-large;
   margin: 60px 40px;
   padding: 50px 50px;
-  
+  -ms-grid-column: 4;
       grid-column-start: 4;
   grid-column-end: -1;
 }
@@ -132,7 +130,7 @@ blockquote {
   font-size: large;
   padding-left: 90px;
   margin-top: -100px;
-  
+  -ms-grid-column: 2;
       grid-column-start: 2;
   grid-column-end: 4;
 }
@@ -141,13 +139,13 @@ blockquote {
   font-size: large;
   padding-left: 90px;
   margin-top: -100px;
-  
+  -ms-grid-column: 4;
       grid-column-start: 4;
   grid-column-end: -1;
 }
 
 .Pic1 {
-  
+  background-image: -webkit-gradient(linear, left top, left bottom, from(lightblue), to(gray));
   background-image: linear-gradient(lightblue, gray);
   height: 100px;
   width: 100px;
@@ -155,13 +153,13 @@ blockquote {
   position: relative;
   bottom: 200px;
   right: 30px;
-  
+  -ms-grid-column: 2;
       grid-column-start: 2;
   grid-column-end: 4;
 }
 
 .Pic2 {
-  
+  background-image: -webkit-gradient(linear, left top, left bottom, from(lightblue), to(gray));
   background-image: linear-gradient(lightblue, gray);
   height: 100px;
   width: 100px;
@@ -169,7 +167,7 @@ blockquote {
   position: relative;
   bottom: 200px;
   right: 30px;
-  
+  -ms-grid-column: 4;
       grid-column-start: 4;
   grid-column-end: -1;
 }
@@ -178,10 +176,10 @@ blockquote {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: left;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  text-align: left;
   margin: 0px 200px;
 }
 
@@ -190,44 +188,43 @@ blockquote {
 }
 
 img {
-  width: 360px;
   height: 250px;
+  width: 360px;
+  padding: 0;
   -o-object-fit: cover;
      object-fit: cover;
-  padding: 0;
 }
 
 h3 {
   font-size: 30px;
-  color: #9b94c2;
-  padding-left: 5px;
   margin: 5px 0px;
+  padding-left: 5px;
+  color: #9b94c2;
 }
 
 small {
-  padding-left: 5px;
   font-size: 15px;
+  padding-left: 5px;
 }
 
 p {
-  padding-left: 5px;
   font-size: 16px;
+  padding-left: 5px;
 }
 
 button {
+  width: 250px;
+  font-size: 20px;
   margin-left: 100px;
   margin-bottom: 10px;
   padding: 4px;
+  border-radius: 4px;
+  border-style: none;
   background-color: #4a4a99;
   color: white;
-  border-style: none;
-  font-size: 20px;
-  width: 250px;
-  border-radius: 4px;
 }
 
 ul {
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,25 +232,26 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 100px 550px;
+  list-style: none;
 }
 
 ul li.allChallenges a {
-  font-size: 20px;
-  color: #4a4a99;
-  border-style: solid;
   padding: 10px 60px;
-  text-decoration: none;
+  font-size: 20px;
   border-radius: 3px;
+  border-style: solid;
+  color: #4a4a99;
+  text-decoration: none;
 }
 
 .story {
   display: -ms-grid;
   display: grid;
-  
+  -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
- 
+  -ms-grid-rows: auto;
       grid-template-rows: auto;
-  
+  -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: -1;
   -webkit-box-align: center;
@@ -265,7 +263,7 @@ ul li.allChallenges a {
 
 h3.Story {
   font-size: 30px;
-  
+  -ms-grid-column: 2;
       grid-column-start: 2;
   grid-column-end: 6;
 }
@@ -285,9 +283,9 @@ button.Rd_Sty {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 300px;
   height: auto;
   width: auto;
+  margin-top: 300px;
 }
 
 img.pic0 {
@@ -303,9 +301,9 @@ img.pic1 {
 
 .BookingtextBox {
   text-align: left;
-  padding: 100px 80px;
   height: 50%;
   margin: 0;
+  padding: 100px 80px;
 }
 
 .bookingHeading {
@@ -332,14 +330,10 @@ img.pic1 {
   padding: 10px;
 }
 
-.container {
-  text-align: center;
-}
-
 secondHeader {
   display: -ms-grid;
   display: grid;
- 
+  -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: -1;
   font-size: 40px;
@@ -351,11 +345,11 @@ footer {
   background-color: gray;
   display: -ms-grid;
   display: grid;
-  
+  -ms-grid-columns: (1f)[12];
       grid-template-columns: repeat(12, 1f);
- 
+  -ms-grid-rows: auto;
       grid-template-rows: auto;
- 
+  -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: -1;
   height: 300px;

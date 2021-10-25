@@ -1,11 +1,10 @@
-.pictureContainer {
+.hero {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 20px auto auto auto auto 20px;
   grid-column-start: 1;
   grid-column-end: -1;
-  text-align: center;
-  height: 400px;
+  height: 500px;
   width: 100%;
   background-image: url(/Pictures/hacking-dea.jpg);
 }
