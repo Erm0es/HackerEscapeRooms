@@ -2,13 +2,18 @@ $Maincolor: rgb(74, 74, 153);
 
 ul.proceedLinks {
   display: flex;
-  justify-content: space-evenly;
+  justify-content:center;
   margin-top: -15px;
 
   li {
     a {
-      font-size: 25px;
-      padding: 10px 30px;
+      display: flex;
+      justify-content: center;
+      width: 250px;
+      height: 30px;
+      font-size: 20px;
+      margin-left: 30px;
+      padding: 5px;
       border-radius: 5px;
       background-color: $Maincolor;
       color: white;

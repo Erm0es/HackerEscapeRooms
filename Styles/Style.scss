@@ -13,8 +13,12 @@
 $Maincolor: rgb(74, 74, 153);
 $MainColorGray: rgb(98, 97, 102);
 
-
-
+body {
+  max-width:1300px;
+}
+.container{
+ 
+}
 footer {
   background-color: gray;
   display: grid;

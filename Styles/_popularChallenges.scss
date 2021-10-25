@@ -9,21 +9,21 @@ secondHeader {
   text-align: center;
   font-size: 60px;
   margin: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 //MainContent
 .popularChallenges {
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
   text-align: left;
-  margin: 0px 100px;
+  margin: 0;
 
   //Håller allt innehåll
   .card {
     height: 500px;
     width: 30%;
-    margin: 30px;
+    margin: 10px;
     border: solid $MainColorGray;
   }
   img {
@@ -50,11 +50,11 @@ secondHeader {
   button {
     justify-content: flex-end;
     position: relative;
-    top: 15px;
-    left: 220px;
-    width: 250px;
+    top: -10px;
+    left: 140px;
+    width: 220px;
     font-size: 20px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 4px;
     border-style: none;
     background-color: $Maincolor;
@@ -65,17 +65,18 @@ secondHeader {
 //Links
 ul {
   display: flex;
-  justify-content: space-between;
-  margin: 50px 550px;
+  justify-content:center;
+  margin: 100px 0px;
   list-style: none;
   li.allChallenges {
     a {
-      padding: 10px 60px;
+      padding: 10px 20px;
       font-size: 20px;
       border-radius: 3px;
       border-style: solid;
       color: $Maincolor;
       text-decoration: none;
+      margin-left:10px;
     }
   }
 }
