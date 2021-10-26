@@ -32,45 +32,47 @@ header .Logo .LogoText {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  top: 30px;
+  top: 35px;
   left: 75px;
-  color: #011827;
 }
 
 header .Logo .LogoText h2.E {
   background-color: white;
   border-style: solid;
   border-color: white;
-  border-radius: 9px 10px;
+  border-radius: 11px;
   width: 25px;
-  height: 27px;
+  height: 28px;
   margin-left: -3px;
-  font-size: 25px;
+  font-size: 27px;
   font-weight: lighter;
+  font-family: monospace;
 }
 
 header .Logo .LogoText h2.S {
   background-color: white;
   border-style: solid;
   border-color: white;
-  border-radius: 9px 10px;
+  border-radius: 11px;
   width: 25px;
-  height: 27px;
+  height: 28px;
   margin-left: -3px;
-  font-size: 25px;
+  font-size: 27px;
   font-weight: lighter;
+  font-family: monospace;
 }
 
 header .Logo .LogoText h2.C {
   background-color: white;
   border-style: solid;
   border-color: white;
-  border-radius: 9px 10px;
+  border-radius: 11px;
   width: 25px;
-  height: 27px;
+  height: 28px;
   margin-left: -3px;
-  font-size: 25px;
+  font-size: 27px;
   font-weight: lighter;
+  font-family: monospace;
 }
 
 menu {
