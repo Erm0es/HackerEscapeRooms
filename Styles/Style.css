@@ -1,39 +1,80 @@
 header {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: #011827;
+  color: white;
+  font-weight: bold;
+  padding: 20px 30px;
 }
 
 header h1 {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  grid-column-end: -1;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
+  font-size: 40px;
   margin-left: 40px;
-  font-size: xxx-large;
+}
+
+header .Logo {
+  height: 70px;
+  width: 120px;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 6px;
+  position: relative;
+  bottom: 30px;
+  left: 25px;
+}
+
+header .Logo .LogoText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 30px;
+  left: 75px;
+  color: #011827;
+}
+
+header .Logo .LogoText h2.E {
+  background-color: white;
+  border-style: solid;
+  border-color: white;
+  border-radius: 9px 10px;
+  width: 25px;
+  height: 27px;
+  margin-left: -3px;
+  font-size: 25px;
   font-weight: lighter;
 }
 
-header .circle {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 1;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  position: relative;
-  top: 20px;
-  left: 30px;
-  height: 80px;
-  width: 80px;
-  border-radius: 40px;
-  background-color: #a46ce4;
+header .Logo .LogoText h2.S {
+  background-color: white;
+  border-style: solid;
+  border-color: white;
+  border-radius: 9px 10px;
+  width: 25px;
+  height: 27px;
+  margin-left: -3px;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+header .Logo .LogoText h2.C {
+  background-color: white;
+  border-style: solid;
+  border-color: white;
+  border-radius: 9px 10px;
+  width: 25px;
+  height: 27px;
+  margin-left: -3px;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+menu {
+  background-color: #011827;
 }
 
 menu ul {
@@ -44,7 +85,7 @@ menu ul {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0;
-  padding: 0;
+  padding: 20px 10px;
   list-style-type: none;
 }
 
@@ -56,7 +97,7 @@ menu li {
 menu a {
   font-size: 20px;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .hero {
@@ -94,9 +135,10 @@ ul.proceedLinks li a {
   width: 250px;
   height: 30px;
   font-size: 20px;
-  margin-left: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: #4a4a99;
   color: white;
 }
@@ -108,25 +150,30 @@ blockquote {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0px 10px;
-  margin-bottom: 200px;
+  margin: 0px 30px;
+  margin-bottom: 150px;
+}
+
+blockquote .block {
+  margin-top: -40px;
 }
 
 blockquote img.picture1 {
   position: relative;
-  top: 100px;
-  height: 100px;
-  width: 100px;
-  margin-left: 90px;
+  top: 90px;
+  height: 120px;
+  width: 120px;
+  margin-left: 80px;
+  margin-right: 400px;
 }
 
 blockquote img.picture2 {
   position: relative;
-  top: 100px;
-  height: 100px;
-  width: 100px;
-  margin-left: 90px;
-  margin-left: 90px;
+  top: 90px;
+  height: 120px;
+  width: 120px;
+  margin-left: 80px;
+  margin-right: 500px;
 }
 
 blockquote p.quote1 {
@@ -268,7 +315,7 @@ ul li.allChallenges a {
 button {
   position: relative;
   top: -150px;
-  left: 550px;
+  left: 20px;
   font-size: 20px;
   width: 200px;
   height: 50px;
@@ -329,21 +376,62 @@ img.pic1 {
   border-radius: 5px;
 }
 
-body {
-  max-width: 1300px;
+footer {
+  height: 400px;
+  font-size: 20px;
+  background-color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
 }
 
-footer {
-  background-color: gray;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1f)[12];
-      grid-template-columns: repeat(12, 1f);
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: -1;
-  height: 300px;
+footer .footerBox {
+  padding: 60px 70px;
+}
+
+footer .footerBoxtwo {
+  width: 200px;
+  padding: 60px 60px;
+}
+
+footer .footerBoxthree {
+  width: 300px;
+  padding: 60px 60px;
+  margin-right: 80px;
+}
+
+footer p {
+  margin-top: -20px;
+}
+
+footer ul.play {
+  margin-top: -60px;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px;
+  margin-top: -20px;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  max-width: 1300px;
+  font-family: "Roboto";
+}
+
+.container {
+  text-align: center;
 }
 /*# sourceMappingURL=Style.css.map */

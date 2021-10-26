@@ -1,23 +1,29 @@
 blockquote {
   display: flex;
   justify-content: center;
-  margin: 0px 10px;
-  margin-bottom: 200px;
+  margin: 0px 30px;
+  margin-bottom: 150px;
+
+  .block{
+    margin-top:-40px;
+
+  }
 
   //Picture
   @mixin pic {
     position: relative;
-    top: 100px;
-    height: 100px;
-    width: 100px;
-    margin-left:90px;
+    top: 90px;
+    height: 120px;
+    width: 120px;
+    margin-left:80px;
   }
   img.picture1 {
     @include pic();
+    margin-right:400px;
   }
   img.picture2 {
     @include pic();
-    margin-left:90px;
+    margin-right:500px;
   }
 
   //Revew

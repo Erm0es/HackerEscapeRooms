@@ -1,9 +1,12 @@
+$PrimaryDarkBlue: #011827;
+
 menu {
+  background-color: $PrimaryDarkBlue;
   ul {
     display: flex;
     justify-content:center;
     margin: 0;
-    padding: 0;
+    padding: 20px 10px;
     list-style-type: none;
   }
   li {
@@ -13,6 +16,6 @@ menu {
   a {
     font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
   }
 }

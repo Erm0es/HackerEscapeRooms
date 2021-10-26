@@ -5,19 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="./Styles/Style.css">
 </head>
 
 <body>
     <div class="container">
+        <!--Header-->
         <header class="header">
-            <h1>[Esc] Hacker Escape Rooms</h1>
-            <div class="circle"></div>
+            
+            <div class="Logo">
+             <div class="LogoText">
+                <h2 class ="E">E</h2>
+                <h2 class = "S">S</h2>
+                <h2 class = "C">C</h2>
+             </div>
+            </div>
+            <h1>Hacker Escape Rooms</h1>
         </header>
         <!--sektioner ist för div!-->
+
+        <!--Menu-->
         <menu class="class">
-            <!--nav-->
             <ul>
                 <li><a href="url">Play online</a></li>
                 <li><a href="url">Play on-site</a></li>
@@ -26,16 +35,20 @@
             </ul>
         </menu>
 
+        <!--hero-->
         <hero class="hero">
             <!--aria-->
         </hero>
 
+        <!--Click-to see challenges-->
         <ul class="proceedLinks">
-            <li><a herf="url" role="button">&#128187; Online challenges</a></li>
-            <li><a herf="url" role="button">&#127968; On-site challenges</a></li>
+            <li><a herf="url" role="button">Online challenges</a></li>
+            <li><a herf="url" role="button">On-site challenges</a></li>
         </ul>
 
+        <!--Customer Rewievs-->
         <blockquote class="blockquote">
+            <!--First rewiev-->
             <div class="block">
                 <img class="picture1" src="Pictures/person-circle.png">
                 <p class="quote1">
@@ -44,6 +57,7 @@
                 </p>
                 <small class="Author1">- Quote Author</small>
             </div>
+            <!--Second rewiev-->
             <div class="block">
                 <img class="picture2" src="Pictures/person-circle.png">
                 <p class="quote2">
@@ -54,10 +68,13 @@
             </div>
         </blockquote>
 
+        <!--Popular Challenges-Header-->
         <secondHeader class="scnHeader">
             Popular challenges right now
         </secondHeader>
-<!--LÄGGA TILL STJÄRNOR OCH SYMBOL-->
+        
+        <!--Popular challenges-cards-->
+            <!--Card one-->
         <challengeOpt class="popularChallenges">
             <div class="card">
                 <img src="https://picsum.photos/350/250"></img>
@@ -72,6 +89,7 @@
                     <button type="button">Take challenge online</button>
                 </div>
             </div>
+             <!--Card two-->
             <div class="card">
                 <img src="https://picsum.photos/350/250"></img>
                 <div class="textBox">
@@ -85,6 +103,7 @@
                     <button type="button">Book this room</button>
                 </div>
             </div>
+             <!--Card three-->
             <div class="card">
                 <img src="https://picsum.photos/350/250"></img>
                 <div class="textBox">
@@ -93,25 +112,30 @@
                     <p>Fusce ac orci sit amet elit gravida volutpat ac non mi. Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                         minim
-                        veniam 
+                        veniam
                     </p>
                     <button type="button">Book this room</button>
                 </div>
             </div>
         </challengeOpt>
 
+        <!--See all challenges-buttons-->
         <ul>
-            <li class="allChallenges"><a href="Link" role="button">&#128187; All online challenges</a></li>
-            <li class="allChallenges"><a href="Link" role="button">&#127968; All on-site challenges</a></li>
+            <li class="allChallenges"><a href="Link" role="button">All online challenges</a></li>
+            <li class="allChallenges"><a href="Link" role="button">All on-site challenges</a></li>
         </ul>
 
+        <!--Read the full story-->
         <div class="story">
             <h3 class="story">
-                Phasellus efficitur accumsan tellus, vitae rutrum sapien sodales sit amet. Fusce ac orci sit amet elit gravida volutpat ac non mi. Integer sit amet risus turpis. Nulla at finibus nulla. Mauris risus libero
+                Phasellus efficitur accumsan tellus, vitae rutrum sapien sodales sit amet. Fusce ac orci sit amet elit
+                gravida volutpat ac non mi. Integer sit amet risus turpis. Nulla at finibus nulla. Mauris risus libero
             </h3>
         </div>
         <button type="button">Read the full story</button>
-<!--DEKLARERA KNAPPARNA-->
+
+        <!--Booking alternetives-->
+            <!--option one-->
         <booking class="booking">
             <div class="bookBox0">
                 <img class="pic0" src="https://picsum.photos/350/250"></img>
@@ -122,10 +146,11 @@
                         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
                         explicabo.
                     </p>
-                    <button class = "Btn" type="button">&#128187 Play online</button>
-                    <button class = "Btn" type="button">&#127968 Book on-site</button>
+                    <button class="Btn" type="button">Play online</button>
+                    <button class="Btn" type="button">Book on-site</button>
                 </div>
             </div>
+            <!--option two-->
             <div class="bookBox1">
                 <div class="BookingtextBox">
                     <h3 class="bookingHeading">Play with your friends or
@@ -135,30 +160,46 @@
                         eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
                         explicabo.
                     </p>
-                    <button class = "Btn" type="button">Book on-site today</button>
+                    <button class="Btn" type="button">Book on-site today</button>
                 </div>
                 <img class="pic1" src="https://picsum.photos/350/250"></img>
             </div>
         </booking>
 
-
-        <footer class="footer">
-            <h4 class = "escText">[Esc] Hacker Escape Rooms</h4>
-            <p class = "escText">Excepteur sint occaecat cupidatat non proident, 
-                sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
-            <h4 class = "siteMap">Site map</h4>
-            <ul class = "siteMap">
-                <li><a href ="siteMap" role = "button">The Story</a></li>
-                <li><a href ="siteMap" role = "button">Contact Us</a></li>
-                <li><a href ="siteMap" role = "button">Legal</a></li>
-
-                <li><a href ="siteMap" role = "button">Play online</a></li>
-                <li><a href ="siteMap" role = "button">Play on-site</a></li>  
-            </ul>
-
-
-        </footer>
+        <!--footer-->
+    <footer class="footer">
+        <!--First-->
+     <div class = "footerBox">
+        <h4>[Esc] Hacker Escape Rooms</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta 
+            velit sed tempor molestie. Aliquam interdum commodo ante vel
+           
+        </p>
+     </div>
+        <!--Second-->
+     <div class = "footerBoxtwo">
+        <h4>Site Map</h4>
+        <ul>
+            <li class="sitemap"><a href="Link" role="button">The story</a></li>
+            <li class="sitemap"><a href="Link" role="button">Contact us</a></li>
+            <li class="sitemap"><a href="Link" role="button">Legal</a></li>
+        </ul>
+        <ul class = "play">
+            <li class="sitemap"><a href="Link" role="button">Play online</a></li>
+            <li class="sitemap"><a href="Link" role="button">Play on-site</a></li>
+        </ul>
+      </div>
+        <!--Third-->
+     <div class = "footerBoxthree">
+        <h4>Follow us on</h4>
+        <ul>
+            <li class="follow"><a href="Link" role="button">Facebook</a></li>
+            <li class="follow"><a href="Link" role="button">Instagram</a></li>
+            <li class="follow"><a href="Link" role="button">YouTube</a></li>
+            
+        </ul>
+     </div>
+    </footer>
 
     </div>
         <script src="Script.js"></script>

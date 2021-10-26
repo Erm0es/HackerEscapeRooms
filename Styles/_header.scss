@@ -1,29 +1,65 @@
+//Header
+$PrimaryDarkBlue: #011827;
+
 header {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
-  grid-column-start: 1;
-  grid-column-end: -1;
+  display: flex;
+  align-items: flex-end;
+  background-color: $PrimaryDarkBlue;
+  color:white;
+  font-weight: bold;
+  padding: 20px 30px;
+  
 
   h1 {
-    grid-column-start: 2;
-    grid-column-end: -1;
-    grid-row-start: 1;
-    margin-left:40px;
-    font-size: xxx-large;
-    font-weight: lighter;
+    font-size:40px;
+    margin-left: 40px;
+    
   }
 
-  .circle {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
+  .Logo {
+    height: 70px;
+    width: 120px;
+    border-radius: 15px;
+    border-style:solid;
+    border-width: 6px;
     position: relative;
-    top: 20px;
-    left: 30px;
-    height: 80px;
-    width: 80px;
-    border-radius: 40px;
-    background-color: rgb(164, 108, 228);
+    bottom:30px;
+    left:25px;
+   
+
+    .LogoText{
+     display: flex;
+     position:fixed;
+     top:30px;
+     left:75px;
+     
+     
+     
+     color:$PrimaryDarkBlue;
+     
+      @mixin LetterDeko{
+
+        background-color: white;
+        border-style:  solid;
+        border-color: white;
+        border-radius: 9px 10px;
+        width: 25px;
+        height: 27px;
+        margin-left:-3px;
+        font-size: 25px;
+        font-weight: lighter;
+        
+      }
+
+      h2.E{
+        @include LetterDeko();
+      }
+      h2.S{
+        @include LetterDeko();
+      }
+     h2.C{
+        @include LetterDeko();
+      }
+    }
   }
 }
