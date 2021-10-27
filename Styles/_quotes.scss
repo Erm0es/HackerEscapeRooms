@@ -1,57 +1,50 @@
 blockquote {
   display: flex;
-  justify-content: center;
-  margin: 0px 30px;
+  justify-content:space-between;
   margin-bottom: 150px;
-
-  .block{
-    margin-top:-40px;
-
+  
+  @mixin MainBlock{
+    
+    margin-bottom: 200px;
+    
+  }
+  .blockOne{
+    @include MainBlock();
+  }
+  .blockTwo{
+    @include MainBlock();
   }
 
   //Picture
-  @mixin pic {
+  img.picture {
     position: relative;
-    top: 90px;
+    top: 30px;
+    right:200px;
     height: 120px;
-    width: 120px;
-    margin-left:80px;
+    width: 120px; 
+   
   }
-  img.picture1 {
-    @include pic();
-    margin-right:400px;
-  }
-  img.picture2 {
-    @include pic();
-    margin-right:500px;
-  }
-
+  
   //Revew
-  @mixin p {
+  p.quote {
     position: relative;
-    left: 100px;
+    bottom: 100px;
+    left:90px;
     font-size: 25px;
-    margin: 0 100px;
-  }
-  p.quote1 {
-    @include p();
-  }
-  p.quote2 {
-    @include p();
+    margin: 0 90px;
+    text-align: left;
+    font-family: "Roboto";
+    font-style: italic;
+    
   }
 
   //Author
-  @mixin Author {
+  small.Author {
     position: relative;
-    top: 5px;
-    left: 200px;
-    font-size: 20px;
-  }
-  small.Author1 {
-    @include Author();
-  }
-
-  small.Author2 {
-    @include Author();
+    bottom: 90px;
+    left: 67px;
+    font-size: 19px;
+    font-family: "Roboto";
+  
   }
 }

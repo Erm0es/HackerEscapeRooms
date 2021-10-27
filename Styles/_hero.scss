@@ -1,10 +1,44 @@
+$PrimaryRed: #e3170a;
+$PrimaryLightBlue: #8acfe5;
+
+//HeroImg
 .hero {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 20px auto auto auto auto 20px;
-  grid-column-start: 1;
-  grid-column-end: -1;
-  height: 500px;
-  width: 100%;
-  background-image: url(/Pictures/hacking-dea.jpg);
+  .heroImg {
+    width: 100%;
+    height: 468px;
+  }
+}
+
+//Button Links
+@mixin LiMainDecor {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 250px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px 5px;
+  border-radius: 3px;
+  font-size: 24px;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+ul.ButtonLinks {
+  position: relative;
+  bottom: 140px;
+  li.online {
+    @include LiMainDecor();
+    background-color: $PrimaryRed;
+    color: white;
+  }
+  li.onsite {
+    @include LiMainDecor();
+    background-color: $PrimaryLightBlue;
+    color: black;
+  }
+  a {
+    text-align: center;
+    padding: 10px;
+  }
 }

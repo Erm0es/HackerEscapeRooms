@@ -1,15 +1,14 @@
 $MainColorGray: rgb(155, 148, 194);
 $Maincolor: rgb(74, 74, 153);
 
-//Header
-secondHeader {
-  display: grid;
-  grid-column-start: 1;
-  grid-column-end: -1;
+//SecondHeader
+.secondHeader {
+  position: absolute;
+  top: 150%;
+  left:400px;
   text-align: center;
-  font-size: 60px;
-  margin: 100px;
-  margin-bottom: 10px;
+  font-size: 40px;
+  border-style: dashed;
 }
 
 //MainContent
