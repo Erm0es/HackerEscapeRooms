@@ -1,81 +1,99 @@
-$MainColorGray: rgb(155, 148, 194);
-$Maincolor: rgb(74, 74, 153);
-
 //SecondHeader
 .secondHeader {
   position: absolute;
-  top: 150%;
+  top: 157%;
   left:400px;
   text-align: center;
   font-size: 40px;
-  border-style: dashed;
 }
 
-//MainContent
+//Main Content
 .popularChallenges {
   display: flex;
-  justify-content:center;
   text-align: left;
+  justify-content:center;
   margin: 0;
-
-  //Håller allt innehåll
-  .card {
-    height: 500px;
-    width: 30%;
-    margin: 10px;
-    border: solid $MainColorGray;
+  .pCcard {
+    height: 446px;
+    width: 363px;
+    margin: 20px; 
   }
   img {
-    height: 45%;
+    height: 46%;
     width: 100%;
+    border-radius: 6px 6px 0px 0px;
     object-fit: cover;
   }
-
-  //Håller allt textinnehåll
-  .textBox {
-    padding: 5px 10px;
+  //Text box
+  .pCtextBox {
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 0px 0px 6px 6px;
+    box-shadow: 0px 0px 1px;
   }
+  //Title of room
   h3 {
     margin: 5px 0px;
-    font-size: 30px;
-    color: $MainColorGray;
+    font-size: 25px;
   }
+  //stars
+  span{
+    
+  }
+    .checked{
+      color:$PrimaryRed;
+    }
+  //participants
   small {
-    font-size: 15px;
+    font-size: 12px;
+    margin-left:150px;
   }
+  //body-text
   p {
-    font-size: 20px;
+    font-size: 15px;
+    padding:15px 0px;
   }
-  button {
-    justify-content: flex-end;
+  //button
+  .pCbutton {
     position: relative;
-    top: -10px;
-    left: 140px;
-    width: 220px;
-    font-size: 20px;
+    top: 0px;
+    left: 130px;
+    height: 40px;
+    width: 200px;
+    font-size: 18px;
     padding: 5px;
     border-radius: 4px;
     border-style: none;
-    background-color: $Maincolor;
+    background-color: $PrimaryRed;
     color:white;
   }
 }
 
-//Links
-ul {
+//Button Links
+
+//Stylas som "Button Links"
+ul.Challenges-ul{
   display: flex;
-  justify-content:center;
-  margin: 100px 0px;
-  list-style: none;
-  li.allChallenges {
-    a {
-      padding: 10px 20px;
-      font-size: 20px;
-      border-radius: 3px;
-      border-style: solid;
-      color: $Maincolor;
-      text-decoration: none;
-      margin-left:10px;
-    }
+  justify-content: center;
+  position: relative;
+  top:100px;
+  li.onlineChallenges { 
+    @include LiMainDecor;
+    background-color: $PrimaryRed;
+    color:white;
+  }
+  li.onsiteChallenges{
+    @include LiMainDecor();
+    background-color: $PrimaryLightBlue;
+  }
+  a.Online{
+    @include aDecor();
+    color:white;
+    
+  }
+  a.Onsite{
+    @include aDecor();
+    color:black;
+
   }
 }

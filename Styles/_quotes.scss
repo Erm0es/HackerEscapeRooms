@@ -3,22 +3,19 @@ blockquote {
   justify-content:space-between;
   margin-bottom: 150px;
   
-  @mixin MainBlock{
+ 
     
-    margin-bottom: 200px;
-    
-  }
   .blockOne{
-    @include MainBlock();
+    margin-bottom: 200px;
   }
   .blockTwo{
-    @include MainBlock();
+    margin-bottom: 200px;
   }
 
   //Picture
   img.picture {
     position: relative;
-    top: 30px;
+    top: 150px;
     right:200px;
     height: 120px;
     width: 120px; 
@@ -28,8 +25,8 @@ blockquote {
   //Revew
   p.quote {
     position: relative;
-    bottom: 100px;
-    left:90px;
+    top: 50px;
+    left:100px;
     font-size: 25px;
     margin: 0 90px;
     text-align: left;
@@ -37,12 +34,11 @@ blockquote {
     font-style: italic;
     
   }
-
   //Author
   small.Author {
     position: relative;
-    bottom: 90px;
-    left: 67px;
+    top: 70px;
+    left: 50px;
     font-size: 19px;
     font-family: "Roboto";
   

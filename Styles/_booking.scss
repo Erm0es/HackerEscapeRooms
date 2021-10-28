@@ -1,4 +1,3 @@
-$Maincolor: rgb(74, 74, 153);
 
 .booking {
   display: flex;
@@ -6,47 +5,46 @@ $Maincolor: rgb(74, 74, 153);
   width: auto;
   margin-top: 100px;
   margin-bottom: 200px;
-}
 
-//imgbox
-@mixin img {
-  height: 50%;
-  width: 100%;
-}
-img.pic0 {
-  @include img();
-}
-img.pic1 {
-  @include img();
-  margin-top: -40px;
-}
 
-//Text
-.BookingtextBox {
+    img.pic0 {
+    height: 50%;
+    width: 100%;
+    margin-top:-10px;
+   }
+    img.pic1 {
+    height: 50%;
+    width: 100%;
+    margin-top: -65px;
+    }
+
+  //Text
+  .BookingtextBox {
   text-align: left;
   height: 50%;
-  margin: 0;
-  padding: 0px 80px;
+  margin: 20px;
+  padding: 0px 100px;
  
-  .bookingHeading {
-    font-size: 40px;
-  }
-  .textBook {
+    .bookingHeading {
+    font-size: 35px;
+    
+    }
+    .textBook {
     font-size: 20px;
-  }
-  //Buttons
-  button.Btn {
+   }
+   //Buttons
+    button.Btn {
     position: relative;
     left:0px;
     top:0px;
-    width: 200px;
-    background-color: $Maincolor;
+    width: 250px;
+    background-color:$PrimaryRed ;
     color:white;
     font-size: 20px;
     padding: 10px;
     margin-right: 10px;
     border-style: none;
     border-radius: 5px;
-
   }
+}
 }

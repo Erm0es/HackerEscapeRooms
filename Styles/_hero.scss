@@ -1,6 +1,3 @@
-$PrimaryRed: #e3170a;
-$PrimaryLightBlue: #8acfe5;
-
 //HeroImg
 .hero {
   .heroImg {
@@ -10,35 +7,27 @@ $PrimaryLightBlue: #8acfe5;
 }
 
 //Button Links
-@mixin LiMainDecor {
+ul.ButtonLinks {
   display: flex;
   justify-content: center;
-  height: 50px;
-  width: 250px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 5px 5px;
-  border-radius: 3px;
-  font-size: 24px;
-  font-family: "Roboto";
-  font-weight: bold;
-}
-
-ul.ButtonLinks {
   position: relative;
-  bottom: 140px;
-  li.online {
+  top:-50px;
+  li.Online {
     @include LiMainDecor();
     background-color: $PrimaryRed;
     color: white;
   }
-  li.onsite {
+  li.Onsite {
     @include LiMainDecor();
     background-color: $PrimaryLightBlue;
-    color: black;
   }
-  a {
-    text-align: center;
-    padding: 10px;
+  a.Online{
+    @include aDecor();
+    color:white;
+    
+  }
+  a.Onsite{
+    @include aDecor();
+    color:black;
   }
 }

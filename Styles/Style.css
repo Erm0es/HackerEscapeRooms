@@ -21,7 +21,13 @@
   font-size: 40px;
 }
 
-.headerMenu .headerMenuUL {
+.headerMenu ul.headerMenuUL {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   position: relative;
   top: 170px;
   margin: 0;
@@ -30,7 +36,7 @@
   list-style-type: none;
 }
 
-.headerMenu li {
+.headerMenu li.headerli {
   margin: 0 30px;
   padding: 0 30px;
 }
@@ -42,7 +48,7 @@
 }
 
 .headerMenu a:hover {
-  color: #8acfe5;
+  color: #8ACFE5;
 }
 
 .hero .heroImg {
@@ -51,11 +57,17 @@
 }
 
 ul.ButtonLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
-  bottom: 140px;
+  top: -50px;
 }
 
-ul.ButtonLinks li.online {
+ul.ButtonLinks li.Online {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,11 +83,11 @@ ul.ButtonLinks li.online {
   font-size: 24px;
   font-family: "Roboto";
   font-weight: bold;
-  background-color: #e3170a;
+  background-color: #E3170A;
   color: white;
 }
 
-ul.ButtonLinks li.onsite {
+ul.ButtonLinks li.Onsite {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,13 +103,19 @@ ul.ButtonLinks li.onsite {
   font-size: 24px;
   font-family: "Roboto";
   font-weight: bold;
-  background-color: #8acfe5;
-  color: black;
+  background-color: #8ACFE5;
 }
 
-ul.ButtonLinks a {
-  text-align: center;
+ul.ButtonLinks a.Online {
   padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+ul.ButtonLinks a.Onsite {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
 }
 
 blockquote {
@@ -120,7 +138,7 @@ blockquote .blockTwo {
 
 blockquote img.picture {
   position: relative;
-  top: 30px;
+  top: 150px;
   right: 200px;
   height: 120px;
   width: 120px;
@@ -128,8 +146,8 @@ blockquote img.picture {
 
 blockquote p.quote {
   position: relative;
-  bottom: 100px;
-  left: 90px;
+  top: 50px;
+  left: 100px;
   font-size: 25px;
   margin: 0 90px;
   text-align: left;
@@ -139,99 +157,146 @@ blockquote p.quote {
 
 blockquote small.Author {
   position: relative;
-  bottom: 90px;
-  left: 67px;
+  top: 70px;
+  left: 50px;
   font-size: 19px;
   font-family: "Roboto";
 }
 
 .secondHeader {
   position: absolute;
-  top: 150%;
+  top: 157%;
   left: 400px;
   text-align: center;
   font-size: 40px;
-  border-style: dashed;
 }
 
 .popularChallenges {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: left;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: left;
   margin: 0;
 }
 
-.popularChallenges .card {
-  height: 500px;
-  width: 30%;
-  margin: 10px;
-  border: solid #9b94c2;
+.popularChallenges .pCcard {
+  height: 446px;
+  width: 363px;
+  margin: 20px;
 }
 
 .popularChallenges img {
-  height: 45%;
+  height: 46%;
   width: 100%;
+  border-radius: 6px 6px 0px 0px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.popularChallenges .textBox {
-  padding: 5px 10px;
+.popularChallenges .pCtextBox {
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 0px 0px 6px 6px;
+  -webkit-box-shadow: 0px 0px 1px;
+          box-shadow: 0px 0px 1px;
 }
 
 .popularChallenges h3 {
   margin: 5px 0px;
-  font-size: 30px;
-  color: #9b94c2;
+  font-size: 25px;
+}
+
+.popularChallenges .checked {
+  color: #E3170A;
 }
 
 .popularChallenges small {
-  font-size: 15px;
+  font-size: 12px;
+  margin-left: 150px;
 }
 
 .popularChallenges p {
-  font-size: 20px;
+  font-size: 15px;
+  padding: 15px 0px;
 }
 
-.popularChallenges button {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+.popularChallenges .pCbutton {
   position: relative;
-  top: -10px;
-  left: 140px;
-  width: 220px;
-  font-size: 20px;
+  top: 0px;
+  left: 130px;
+  height: 40px;
+  width: 200px;
+  font-size: 18px;
   padding: 5px;
   border-radius: 4px;
   border-style: none;
-  background-color: #4a4a99;
+  background-color: #E3170A;
   color: white;
 }
 
-ul {
+ul.Challenges-ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 100px 0px;
-  list-style: none;
+  position: relative;
+  top: 100px;
 }
 
-ul li.allChallenges a {
-  padding: 10px 20px;
-  font-size: 20px;
-  border-radius: 3px;
-  border-style: solid;
-  color: #4a4a99;
-  text-decoration: none;
+ul.Challenges-ul li.onlineChallenges {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  width: 250px;
   margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px 5px;
+  border-radius: 3px;
+  font-size: 24px;
+  font-family: "Roboto";
+  font-weight: bold;
+  background-color: #E3170A;
+  color: white;
+}
+
+ul.Challenges-ul li.onsiteChallenges {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  width: 250px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px 5px;
+  border-radius: 3px;
+  font-size: 24px;
+  font-family: "Roboto";
+  font-weight: bold;
+  background-color: #8ACFE5;
+}
+
+ul.Challenges-ul a.Online {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+ul.Challenges-ul a.Onsite {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
 }
 
 .story {
@@ -241,27 +306,34 @@ ul li.allChallenges a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 100px 0px;
+  width: 1280px;
+  height: 400px;
+  margin-top: 200px;
+  background-color: #011827;
 }
 
 .story h3.story {
+  position: relative;
+  top: -60px;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   padding: 0px 200px;
+  color: white;
+  font-weight: lighter;
 }
 
 button {
   position: relative;
-  top: -150px;
-  left: 20px;
+  bottom: 100px;
   font-size: 20px;
-  width: 200px;
+  width: 270px;
   height: 50px;
   padding: 10px;
-  background-color: white;
-  color: #4a4a99;
-  border: solid #4a4a99;
+  color: #8ACFE5;
+  background-color: #011827;
+  border-color: #8ACFE5;
   border-radius: 6px;
+  font-weight: bold;
 }
 
 .booking {
@@ -274,38 +346,39 @@ button {
   margin-bottom: 200px;
 }
 
-img.pic0 {
+.booking img.pic0 {
   height: 50%;
   width: 100%;
+  margin-top: -10px;
 }
 
-img.pic1 {
+.booking img.pic1 {
   height: 50%;
   width: 100%;
-  margin-top: -40px;
+  margin-top: -65px;
 }
 
-.BookingtextBox {
+.booking .BookingtextBox {
   text-align: left;
   height: 50%;
-  margin: 0;
-  padding: 0px 80px;
+  margin: 20px;
+  padding: 0px 100px;
 }
 
-.BookingtextBox .bookingHeading {
-  font-size: 40px;
+.booking .BookingtextBox .bookingHeading {
+  font-size: 35px;
 }
 
-.BookingtextBox .textBook {
+.booking .BookingtextBox .textBook {
   font-size: 20px;
 }
 
-.BookingtextBox button.Btn {
+.booking .BookingtextBox button.Btn {
   position: relative;
   left: 0px;
   top: 0px;
-  width: 200px;
-  background-color: #4a4a99;
+  width: 250px;
+  background-color: #E3170A;
   color: white;
   font-size: 20px;
   padding: 10px;
@@ -315,39 +388,41 @@ img.pic1 {
 }
 
 footer {
-  height: 400px;
-  font-size: 20px;
-  background-color: gray;
+  height: 467px;
+  font-size: 15px;
+  background-color: #011827;
+  color: #B6BDB5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: left;
 }
 
+footer h4 {
+  font-weight: bold;
+}
+
 footer .footerBox {
-  padding: 60px 70px;
+  width: 650px;
+  padding: 100px 100px;
+}
+
+footer .footerBox p {
+  margin-top: -10px;
 }
 
 footer .footerBoxtwo {
-  width: 200px;
-  padding: 60px 60px;
+  width: 325px;
+  padding: 100px 10px;
+  margin-left: 150px;
 }
 
-footer .footerBoxthree {
-  width: 300px;
-  padding: 60px 60px;
-  margin-right: 80px;
-}
-
-footer p {
-  margin-top: -20px;
-}
-
-footer ul.play {
-  margin-top: -60px;
-}
-
-footer ul {
+footer .footerBoxtwo ul {
+  margin-top: -10px;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,18 +430,35 @@ footer ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0px;
-  margin-top: -20px;
+  list-style: none;
 }
 
-footer ul a {
+footer .footerBoxtwo ul li a {
   text-decoration: none;
-  color: black;
+  color: #B6BDB5;
+}
+
+footer .footerBoxthree {
+  width: 325px;
+  padding: 100px 10px;
+}
+
+footer .footerBoxthree ul {
+  margin-top: -10px;
+  padding: 0;
+  list-style: none;
+}
+
+footer .footerBoxthree ul li.follow a {
+  text-decoration: none;
+  color: #B6BDB5;
 }
 
 body {
   max-width: 1300px;
   font-family: "Roboto";
+  margin: 0;
+  padding: 0;
 }
 
 .container {

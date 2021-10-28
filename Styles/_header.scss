@@ -1,6 +1,3 @@
-$PrimaryDarkBlue: #011827;
-$PrimaryLightBlue: #8acfe5;
-
 //Header
 .headerBox {
   height: 216px;
@@ -25,7 +22,9 @@ $PrimaryLightBlue: #8acfe5;
 }
 //Menu
 .headerMenu {
-  .headerMenuUL {
+  ul.headerMenuUL {
+    display: flex;
+    justify-content: space-evenly;
     position: relative;
     top: 170px;
     margin: 0;
@@ -33,7 +32,7 @@ $PrimaryLightBlue: #8acfe5;
     font-size: 24px;
     list-style-type: none;
   }
-  li {
+  li.headerli {
     margin: 0 30px;
     padding: 0 30px;
   }

@@ -1,3 +1,5 @@
+@import "./mixins-variabler";
+
 @import "./header";
 @import "./hero";
 
@@ -8,16 +10,13 @@
 @import "./booking";
 @import "./footer";
 
-$PrimaryRed: #E3170A;
-$PrimaryLightBlue: #8ACFE5;
-$PrimaryDarkBlue: #011827;
-$PrimaryGrey: #B6BDB5;
-$PrimaryBlue: #36769D;
-
 body {
   max-width:1300px;
   font-family: "Roboto";
+  margin:0;
+  padding:0;
 }
 .container{
   text-align: center;
+  
 }
