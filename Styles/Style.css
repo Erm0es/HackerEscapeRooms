@@ -7,18 +7,38 @@
 }
 
 .headerBox .headerLogo {
-  position: absolute;
-  top: 26px;
-  left: 27px;
+  position: relative;
+  top: 20px;
+  right: 550px;
   height: 82px;
   width: 128px;
 }
 
 .headerBox h1 {
-  position: absolute;
-  top: 27px;
-  left: 179px;
+  position: relative;
+  top: -70px;
+  right: 260px;
   font-size: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .headerBox {
+    width: 480px;
+    height: 114px;
+  }
+  .headerBox .headerLogo {
+    position: absolute;
+    top: 10px;
+    height: 82px;
+    width: 128px;
+  }
+  .headerBox h1 {
+    position: absolute;
+    top: -10px;
+    left: 130px;
+    font-size: 24px;
+    padding: 0px 200px;
+  }
 }
 
 .headerMenu {
@@ -33,7 +53,7 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   position: relative;
-  top: 170px;
+  top: -30px;
   margin-top: 0;
   padding-top: 0;
   font-size: 24px;
@@ -168,9 +188,8 @@ blockquote small.Author {
 }
 
 .secondHeader {
-  position: absolute;
-  top: 157%;
-  left: 400px;
+  position: relative;
+  bottom: 50px;
   text-align: center;
   font-size: 40px;
 }

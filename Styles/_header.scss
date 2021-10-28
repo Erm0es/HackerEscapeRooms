@@ -7,19 +7,42 @@
   background-color: $PrimaryDarkBlue;
 
   .headerLogo {
-    position: absolute;
-    top: 26px;
-    left: 27px;
+    position: relative;
+    top: 20px;
+    right: 550px;
     height: 82px;
     width: 128px;
   }
   h1 {
-    position: absolute;
-    top: 27px;
-    left: 179px;
+    position: relative;
+    top: -70px;
+    right: 260px;
     font-size: 40px;
   }
 }
+
+@media only screen and (max-width: 600px){
+  .headerBox {
+    width:480px;
+    height: 114px;
+    .headerLogo {
+      position: absolute;
+      top:10px;
+      height: 82px;
+      width: 128px;
+    }
+    h1{
+      position: absolute;
+      top: -10px;
+      left: 130px;
+      font-size: 24px;
+      padding: 0px 200px;
+     
+    }
+  }
+
+}
+
 //Menu
 .headerMenu {
   margin-top:0;
@@ -27,7 +50,7 @@
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    top: 170px;
+    top: -30px;
     margin-top: 0;
     padding-top: 0;
     font-size: 24px;

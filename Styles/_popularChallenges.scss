@@ -1,8 +1,7 @@
 //SecondHeader
 .secondHeader {
-  position: absolute;
-  top: 157%;
-  left:400px;
+  position: relative;
+  bottom:50px;
   text-align: center;
   font-size: 40px;
 }
@@ -37,9 +36,6 @@
     font-size: 25px;
   }
   //stars
-  span{
-    
-  }
     .checked{
       color:$PrimaryRed;
     }
