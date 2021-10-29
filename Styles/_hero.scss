@@ -1,8 +1,9 @@
 //HeroImg
 .hero {
   .heroImg {
-    width: 100%;
+    width: 1280px;
     height: 468px;
+    background-image:url("/Pictures/image\ 2.JPG");
   }
 }
 
@@ -15,19 +16,57 @@ ul.ButtonLinks {
   li.Online {
     @include LiMainDecor();
     background-color: $PrimaryRed;
-    color: white;
+    a.Online{
+      @include aDecor();
+      color:white; 
+    }
   }
+
   li.Onsite {
     @include LiMainDecor();
     background-color: $PrimaryLightBlue;
+
+    a.Onsite{
+      @include aDecor();
+      color:black;
+    }
+  } 
+}
+
+@media screen and (max-width: 800px){
+  .hero{
+    .heroImg{
+    width: 800px;
+    height: 274px;
+    background-image: url("/Pictures/image\ 2\ \(1\).jpg");
+    }
   }
-  a.Online{
-    @include aDecor();
-    color:white;
-    
-  }
-  a.Onsite{
-    @include aDecor();
-    color:black;
+
+  ul.ButtonLinks{
+    flex-direction: column;
+    li.Online{
+      @include LinkDecor();
+      position: relative;
+      top:190px;
+      left:85px;
+      a.Online{
+        color:$PrimaryBlue;
+        text-decoration: underline;
+
+      }
+    }
+    li.Onsite{
+      position: relative;
+      top:50px;
+      left:33px;
+      width: 308px;
+      height: 66px;
+
+      a.Onsite{
+
+
+      }
+      
+    }
   }
 }

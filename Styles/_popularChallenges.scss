@@ -1,7 +1,7 @@
 //SecondHeader
 .secondHeader {
   position: relative;
-  bottom:50px;
+  bottom: 50px;
   text-align: center;
   font-size: 40px;
 }
@@ -10,25 +10,32 @@
 .popularChallenges {
   display: flex;
   text-align: left;
-  justify-content:center;
+  justify-content: center;
   margin: 0;
-  .pCcard {
-    height: 446px;
-    width: 363px;
-    margin: 20px; 
+  .pCcard1 {
+    @include pCcard();
+  }
+  .pCcard2 {
+    @include pCcard();
+  }
+  .pCcard3 {
+    @include pCcard();
   }
   img {
+    position: relative;
+    top:3px;
     height: 46%;
     width: 100%;
     border-radius: 6px 6px 0px 0px;
     object-fit: cover;
+   
   }
   //Text box
   .pCtextBox {
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 0px 0px 6px 6px;
-    box-shadow: 0px 0px 1px;
+    box-shadow: 0px 0px 6px gray;
   }
   //Title of room
   h3 {
@@ -36,18 +43,18 @@
     font-size: 25px;
   }
   //stars
-    .checked{
-      color:$PrimaryRed;
-    }
+  .checked {
+    color: $PrimaryRed;
+  }
   //participants
   small {
     font-size: 12px;
-    margin-left:150px;
+    margin-left: 150px;
   }
   //body-text
   p {
     font-size: 15px;
-    padding:15px 0px;
+    padding: 15px 0px;
   }
   //button
   .pCbutton {
@@ -61,35 +68,81 @@
     border-radius: 4px;
     border-style: none;
     background-color: $PrimaryRed;
-    color:white;
+    color: white;
   }
 }
 
 //Button Links
 
 //Stylas som "Button Links"
-ul.Challenges-ul{
+ul.Challenges-ul {
   display: flex;
   justify-content: center;
   position: relative;
-  top:100px;
-  li.onlineChallenges { 
+  top: 100px;
+  li.onlineChallenges {
     @include LiMainDecor;
     background-color: $PrimaryRed;
-    color:white;
+    color: white;
   }
-  li.onsiteChallenges{
+  li.onsiteChallenges {
     @include LiMainDecor();
     background-color: $PrimaryLightBlue;
   }
-  a.Online{
+  a.Online {
     @include aDecor();
-    color:white;
-    
+    color: white;
   }
-  a.Onsite{
+  a.Onsite {
     @include aDecor();
-    color:black;
+    color: black;
+  }
+}
 
+@media screen and (max-width: 800px) {
+  .secondHeader {
+    font-size: 34px;
+    bottom: 70px;
+  }
+
+  .popularChallenges {
+    width: 890px;
+    
+    
+    .pCcard3 {
+     display: none;
+    }
+
+    small{
+      margin-left:6px;
+      
+    }
+  }
+
+  ul.Challenges-ul {
+    flex-direction: column;
+    li.onlineChallenges {
+      @include LinkDecor();
+      position: relative;
+      top:30px;
+      left:85px;
+     
+
+    }
+    li.onsiteChallenges {
+      position: relative;
+      bottom:90px;
+      left:33px;
+      width: 308px;
+      height: 66px;
+    }
+    a.Online {
+      color:$PrimaryBlue;
+      text-decoration: underline;
+      
+    }
+    a.Onsite {
+      
+    }
   }
 }

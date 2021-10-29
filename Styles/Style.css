@@ -1,6 +1,6 @@
 .headerBox {
   height: 216px;
-  width: 1280;
+  width: 1280px;
   font-weight: bold;
   color: white;
   background-color: #011827;
@@ -19,26 +19,6 @@
   top: -70px;
   right: 260px;
   font-size: 40px;
-}
-
-@media only screen and (max-width: 600px) {
-  .headerBox {
-    width: 480px;
-    height: 114px;
-  }
-  .headerBox .headerLogo {
-    position: absolute;
-    top: 10px;
-    height: 82px;
-    width: 128px;
-  }
-  .headerBox h1 {
-    position: absolute;
-    top: -10px;
-    left: 130px;
-    font-size: 24px;
-    padding: 0px 200px;
-  }
 }
 
 .headerMenu {
@@ -75,9 +55,33 @@
   color: #8ACFE5;
 }
 
+@media screen and (max-width: 800px) {
+  .headerBox {
+    width: 800px;
+    height: 144px;
+  }
+  .headerBox .headerLogo {
+    position: relative;
+    right: 310px;
+    width: 128px;
+    height: 82px;
+  }
+  .headerBox h1 {
+    position: relative;
+    right: 195px;
+    margin-top: 5px;
+    padding: 0px 330px;
+    font-size: 24px;
+  }
+  .headerMenu {
+    display: none;
+  }
+}
+
 .hero .heroImg {
-  width: 100%;
+  width: 1280px;
   height: 468px;
+  background-image: url("/Pictures/image 2.JPG");
 }
 
 ul.ButtonLinks {
@@ -108,6 +112,11 @@ ul.ButtonLinks li.Online {
   font-family: "Roboto";
   font-weight: bold;
   background-color: #E3170A;
+}
+
+ul.ButtonLinks li.Online a.Online {
+  padding: 10px;
+  text-decoration: none;
   color: white;
 }
 
@@ -130,16 +139,55 @@ ul.ButtonLinks li.Onsite {
   background-color: #8ACFE5;
 }
 
-ul.ButtonLinks a.Online {
-  padding: 10px;
-  text-decoration: none;
-  color: white;
-}
-
-ul.ButtonLinks a.Onsite {
+ul.ButtonLinks li.Onsite a.Onsite {
   padding: 10px;
   text-decoration: none;
   color: black;
+}
+
+@media screen and (max-width: 800px) {
+  .hero .heroImg {
+    width: 800px;
+    height: 274px;
+    background-image: url("/Pictures/image 2 (1).jpg");
+  }
+  ul.ButtonLinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  ul.ButtonLinks li.Online {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 19.97px;
+    width: 229px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    border-radius: 0px;
+    font-size: 17px;
+    font-family: "Roboto";
+    background-color: transparent;
+    position: relative;
+    top: 190px;
+    left: 85px;
+  }
+  ul.ButtonLinks li.Online a.Online {
+    color: #36769D;
+    text-decoration: underline;
+  }
+  ul.ButtonLinks li.Onsite {
+    position: relative;
+    top: 50px;
+    left: 33px;
+    width: 308px;
+    height: 66px;
+  }
 }
 
 blockquote {
@@ -187,6 +235,24 @@ blockquote small.Author {
   font-family: "Roboto";
 }
 
+@media screen and (max-width: 800px) {
+  .blockOne {
+    display: none;
+  }
+  blockquote img.picture {
+    position: relative;
+    right: 170px;
+    width: 72px;
+    height: 75px;
+  }
+  blockquote p.quote {
+    position: relative;
+    top: 60px;
+    margin-left: -13px;
+    font-size: 24px;
+  }
+}
+
 .secondHeader {
   position: relative;
   bottom: 50px;
@@ -205,13 +271,27 @@ blockquote small.Author {
   margin: 0;
 }
 
-.popularChallenges .pCcard {
+.popularChallenges .pCcard1 {
+  height: 446px;
+  width: 363px;
+  margin: 20px;
+}
+
+.popularChallenges .pCcard2 {
+  height: 446px;
+  width: 363px;
+  margin: 20px;
+}
+
+.popularChallenges .pCcard3 {
   height: 446px;
   width: 363px;
   margin: 20px;
 }
 
 .popularChallenges img {
+  position: relative;
+  top: 3px;
   height: 46%;
   width: 100%;
   border-radius: 6px 6px 0px 0px;
@@ -223,8 +303,8 @@ blockquote small.Author {
   font-weight: bold;
   padding: 10px 15px;
   border-radius: 0px 0px 6px 6px;
-  -webkit-box-shadow: 0px 0px 1px;
-          box-shadow: 0px 0px 1px;
+  -webkit-box-shadow: 0px 0px 6px gray;
+          box-shadow: 0px 0px 6px gray;
 }
 
 .popularChallenges h3 {
@@ -322,6 +402,59 @@ ul.Challenges-ul a.Onsite {
   color: black;
 }
 
+@media screen and (max-width: 800px) {
+  .secondHeader {
+    font-size: 34px;
+    bottom: 70px;
+  }
+  .popularChallenges {
+    width: 890px;
+  }
+  .popularChallenges .pCcard3 {
+    display: none;
+  }
+  .popularChallenges small {
+    margin-left: 6px;
+  }
+  ul.Challenges-ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  ul.Challenges-ul li.onlineChallenges {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 19.97px;
+    width: 229px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    border-radius: 0px;
+    font-size: 17px;
+    font-family: "Roboto";
+    background-color: transparent;
+    position: relative;
+    top: 30px;
+    left: 85px;
+  }
+  ul.Challenges-ul li.onsiteChallenges {
+    position: relative;
+    bottom: 90px;
+    left: 33px;
+    width: 308px;
+    height: 66px;
+  }
+  ul.Challenges-ul a.Online {
+    color: #36769D;
+    text-decoration: underline;
+  }
+}
+
 .story {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -358,6 +491,23 @@ button {
   border-color: #8ACFE5;
   border-radius: 6px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .story {
+    width: 480px;
+    height: 500px;
+    margin-top: 100px;
+  }
+  .story h3.story {
+    padding: 10px 30px;
+    top: 10px;
+  }
+  button {
+    width: 308px;
+    height: 66px;
+    margin-top: 40px;
+  }
 }
 
 .booking {
@@ -409,6 +559,47 @@ button {
   margin-right: 10px;
   border-style: none;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .booking {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .booking img.pic0 {
+    height: 300px;
+    width: 480px;
+    margin-top: -76px;
+  }
+  .booking img.pic1 {
+    height: 300px;
+    width: 100%;
+    margin-top: -65px;
+  }
+  .booking .BookingtextBox {
+    padding: 0px 0px;
+  }
+  .booking .BookingtextBox .bookingHeading {
+    font-size: 32px;
+  }
+  .booking .BookingtextBox .textBook {
+    font-size: 24px;
+  }
+  .booking .BookingtextBox button.Btn {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 250px;
+    background-color: #E3170A;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    border-style: none;
+    border-radius: 5px;
+  }
 }
 
 footer {
@@ -479,7 +670,7 @@ footer .footerBoxthree ul li.follow a {
 }
 
 body {
-  max-width: 1300px;
+  max-width: 1280px;
   font-family: "Roboto";
   margin: 0;
   padding: 0;
@@ -487,5 +678,11 @@ body {
 
 .container {
   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    max-width: 800px;
+  }
 }
 /*# sourceMappingURL=Style.css.map */

@@ -48,3 +48,46 @@
   }
 }
 }
+
+@media screen and (max-width: 800px){
+
+  .booking {
+    flex-direction: column;
+      img.pic0 {
+      height: 300px;
+      width: 480px;
+      margin-top:-76px;
+     }
+      img.pic1 {
+      height:300px;
+      width: 100%;
+      margin-top: -65px;
+      }
+  
+    //Text
+    .BookingtextBox {
+      padding: 0px 0px;
+      .bookingHeading {
+      font-size: 32px;
+      }
+      .textBook {
+      font-size: 24px;
+     }
+     //Buttons
+      button.Btn {
+      position: relative;
+      left:0px;
+      top:0px;
+      width: 250px;
+      background-color:$PrimaryRed ;
+      color:white;
+      font-size: 20px;
+      padding: 10px;
+      margin-right: 10px;
+      border-style: none;
+      border-radius: 5px;
+    }
+  }
+  }
+
+}
