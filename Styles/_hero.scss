@@ -1,9 +1,9 @@
 //HeroImg
 .hero {
   .heroImg {
-    width: 1280px;
     height: 468px;
-    background-image:url("/Pictures/image\ 2.JPG");
+    width: 1280px;
+    background-image: url("/Pictures/image\ 2.JPG");
   }
 }
 
@@ -12,61 +12,55 @@ ul.ButtonLinks {
   display: flex;
   justify-content: center;
   position: relative;
-  top:-50px;
+  top: -50px;
   li.Online {
     @include LiMainDecor();
     background-color: $PrimaryRed;
-    a.Online{
+    a.Online {
       @include aDecor();
-      color:white; 
+      color: white;
     }
   }
-
   li.Onsite {
     @include LiMainDecor();
     background-color: $PrimaryLightBlue;
-
-    a.Onsite{
+    a.Onsite {
       @include aDecor();
-      color:black;
-    }
-  } 
-}
-
-@media screen and (max-width: 800px){
-  .hero{
-    .heroImg{
-    width: 800px;
-    height: 274px;
-    background-image: url("/Pictures/image\ 2\ \(1\).jpg");
+      color: black;
     }
   }
+}
 
-  ul.ButtonLinks{
+//media screen
+@media screen and (max-width: 800px) {
+  .hero {
+    .heroImg {
+      height: 274px;
+      width: 800px;
+      background-image: url("/Pictures/image\ 2\ \(1\).jpg");
+    }
+  }
+  ul.ButtonLinks {
     flex-direction: column;
-    li.Online{
+    li.Online {
       @include LinkDecor();
       position: relative;
-      top:190px;
-      left:85px;
-      a.Online{
-        color:$PrimaryBlue;
+      top: 170px;
+      left: 85px;
+      a.Online {
         text-decoration: underline;
-
+        color: $PrimaryBlue;
       }
     }
-    li.Onsite{
+    li.Onsite {
       position: relative;
-      top:50px;
-      left:33px;
-      width: 308px;
+      top: 50px;
+      left: 33px;
       height: 66px;
-
-      a.Onsite{
-
-
+      width: 308px;
+      a.Onsite {
+        margin-top: 10px;
       }
-      
     }
   }
 }

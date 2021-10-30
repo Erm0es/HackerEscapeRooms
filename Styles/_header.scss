@@ -23,7 +23,7 @@
 
 //Menu
 .headerMenu {
-  margin-top:0;
+  margin-top: 0;
   ul.headerMenuUL {
     display: flex;
     justify-content: space-evenly;
@@ -48,29 +48,26 @@
   }
 }
 
-@media screen and (max-width: 800px){
-  
+//media Screen
+@media screen and (max-width: 800px) {
   .headerBox {
-    width: 800px;
     height: 144px;
-  
-  .headerLogo{
-    position: relative;
-    right:310px;
-    width: 128px;
-    height: 82px;
+    width: 800px;
+    .headerLogo {
+      position: relative;
+      right: 310px;
+      width: 128px;
+      height: 82px;
+    }
+    h1 {
+      position: relative;
+      right: 195px;
+      margin-top: 5px;
+      padding: 0px 330px;
+      font-size: 24px;
+    }
   }
-  
-  h1{
-    position: relative;
-    right:195px;
-    margin-top: 5px;
-    padding:0px 330px;
-    font-size: 24px;
-  }
-}
-  .headerMenu{
+  .headerMenu {
     display: none;
   }
 }
-

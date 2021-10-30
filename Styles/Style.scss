@@ -2,30 +2,37 @@
 
 @import "./header";
 @import "./hero";
-
 @import "./quotes";
 @import "./popularChallenges";
-
 @import "./story";
 @import "./booking";
 @import "./footer";
 
+/*inventory from site-sight
+  1.header
+  2.hero
+  3.quotes
+  4.popularChallenges
+  5.story
+  6.booking
+  7.footer
 
+  mixins-variables = All mixins and variables
+  */
 
+//surrounding content
 body {
-  max-width:1280px;
+  max-width: 1280px;
   font-family: "Roboto";
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
-.container{
+.container {
   text-align: center;
-  
 }
 
-@media screen and (max-width: 800px){
- html{
-   max-width: 800px;
- }
- 
+@media screen and (max-width: 800px) {
+  html {
+    max-width: 800px;
+  }
 }

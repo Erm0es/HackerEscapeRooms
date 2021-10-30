@@ -19,7 +19,7 @@ $PrimaryBlue: #36769D;
     font-weight: bold;
   }
   
-  //mediaScreen Button Link(hero)
+  //**MediaScreen** Button Links(hero)
   @mixin LinkDecor {
     display: flex;
     justify-content: center;
@@ -47,4 +47,21 @@ $PrimaryBlue: #36769D;
   }
  
 
+  //Buttons (booking)
+  @mixin bookingBtn{
+    position: relative;
+        left: 0px;
+        top: 0px;
+        width: 250px;
+        background-color: $PrimaryRed;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        margin-right: 10px;
+        border-style: none;
+        border-radius: 5px;
+  }
+
+
+  
   

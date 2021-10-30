@@ -1,51 +1,49 @@
-
 .story {
   display: flex;
   justify-content: center;
-  width: 1280px;
   height: 400px;
+  width: 1280px;
   margin-top: 200px;
   background-color: $PrimaryDarkBlue;
-
- h3.story {
-   position: relative;
-   top:-60px;
-  text-align: center;
-  font-size: 25px;
-  padding: 0px 200px;
-  color:white;
-  font-weight: lighter;
- }
-}
- button {
-  position:relative;
-  bottom:100px;
-  left:10px;
-  font-size: 20px;
-  width: 270px;
-  height: 50px;
-  padding: 10px;
-  color:$PrimaryLightBlue;
-  background-color:$PrimaryDarkBlue;
-  border-color: $PrimaryLightBlue;
-  border-radius: 6px;
-  font-weight: bold;
- }
-
- @media screen and (max-width: 800px){
-
-  .story {
-    width: 480px;
-    height: 500px;
-    margin-top:100px;
-   h3.story {
-    padding: 10px 30px;
-    top:10px;
-   }
+  h3.story {
+    position: relative;
+    top: -60px;
+    padding: 0px 200px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
+    color: white;
   }
-   button {
-     width: 308px;
-     height: 66px;
-     margin-top:40px;
-   }
- }
+}
+button {
+  position: relative;
+  bottom: 100px;
+  left: 10px;
+  height: 50px;
+  width: 270px;
+  padding: 10px;
+  border-radius: 6px;
+  border-color: $PrimaryLightBlue;
+  font-size: 20px;
+  font-weight: bold;
+  color: $PrimaryLightBlue;
+  background-color: $PrimaryDarkBlue;
+}
+
+//media screen
+@media screen and (max-width: 800px) {
+  .story {
+    height: 500px;
+    width: 480px;
+    margin-top: 100px;
+    h3.story {
+      top: 10px;
+      padding: 10px 30px;
+    }
+  }
+  button {
+    height: 66px;
+    width: 308px;
+    margin-top: 40px;
+  }
+}

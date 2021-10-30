@@ -2,14 +2,12 @@ blockquote {
   display: flex;
   justify-content: space-between;
   margin-bottom: 150px;
-
   .blockOne {
     margin-bottom: 200px;
   }
   .blockTwo {
     margin-bottom: 200px;
   }
-
   //Picture
   img.picture {
     position: relative;
@@ -18,16 +16,15 @@ blockquote {
     height: 120px;
     width: 120px;
   }
-
   //Revew
   p.quote {
     position: relative;
     top: 50px;
     left: 100px;
-    font-size: 25px;
     margin: 0 90px;
-    text-align: left;
     font-family: "Roboto";
+    text-align: left;
+    font-size: 25px;
     font-style: italic;
   }
   //Author
@@ -35,27 +32,27 @@ blockquote {
     position: relative;
     top: 70px;
     left: 50px;
-    font-size: 19px;
     font-family: "Roboto";
+    font-size: 19px;
   }
 }
 
+//media screen
 @media screen and (max-width: 800px) {
   .blockOne {
     display: none;
   }
-
   blockquote {
     img.picture {
       position: relative;
-      right:170px;
-      width: 72px;
+      right: 170px;
       height: 75px;
+      width: 72px;
     }
-    p.quote{
+    p.quote {
       position: relative;
-      top:60px;
-      margin-left:-13px;
+      top: 60px;
+      margin-left: -13px;
       font-size: 24px;
     }
   }

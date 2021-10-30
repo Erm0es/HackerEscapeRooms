@@ -1,0 +1,13 @@
+
+
+Jag började med att dela upp min html i olika klasser utifrån hur jag tyckte, att sidan såg u tatt vara strukterad. Jag började uppifrån och tog en klass i taget,
+skrev först html, sedan scss och gick vadare neråt. Vissa klasser försvann på vägen då jag ansåg att jag delat upp sidan i för många.
+När jag struktuerat upp layouten på sidan och gick tillbaka för att börja lägga designen märkte jag att på vägen igenom sidan hade jag lärt mig nya saker och började då uppfirån igen,
+genom att struktera och deklarera på ett bättre sätt. 
+
+Jag började med hemsida för dator och gjorde sedan mobilverisonen, jag tycker att det gick smidigt förutom att min liveserver buggar lite när jag skiftar mellan olika devices. 
+Jag valde scss för att kunna struktuera upp min kod, vilket jag tycker jag lyckats bra med, det har underlättat under veckans gång att veta precis var allt ligger för att kunna gå tillbaka 
+och ändra.
+
+Jag är i helhet nöjd med mitt arbete, det finns små detaljer som stör mig men jag hade nog kunnat sitta i månader med bara små-detaljer. 
+Det var ett roligt projekt men som dock gav mig gallfeber emellanåt.

@@ -57,8 +57,8 @@
 
 @media screen and (max-width: 800px) {
   .headerBox {
-    width: 800px;
     height: 144px;
+    width: 800px;
   }
   .headerBox .headerLogo {
     position: relative;
@@ -79,8 +79,8 @@
 }
 
 .hero .heroImg {
-  width: 1280px;
   height: 468px;
+  width: 1280px;
   background-image: url("/Pictures/image 2.JPG");
 }
 
@@ -147,8 +147,8 @@ ul.ButtonLinks li.Onsite a.Onsite {
 
 @media screen and (max-width: 800px) {
   .hero .heroImg {
-    width: 800px;
     height: 274px;
+    width: 800px;
     background-image: url("/Pictures/image 2 (1).jpg");
   }
   ul.ButtonLinks {
@@ -174,19 +174,22 @@ ul.ButtonLinks li.Onsite a.Onsite {
     font-family: "Roboto";
     background-color: transparent;
     position: relative;
-    top: 190px;
+    top: 170px;
     left: 85px;
   }
   ul.ButtonLinks li.Online a.Online {
-    color: #36769D;
     text-decoration: underline;
+    color: #36769D;
   }
   ul.ButtonLinks li.Onsite {
     position: relative;
     top: 50px;
     left: 33px;
-    width: 308px;
     height: 66px;
+    width: 308px;
+  }
+  ul.ButtonLinks li.Onsite a.Onsite {
+    margin-top: 10px;
   }
 }
 
@@ -220,10 +223,10 @@ blockquote p.quote {
   position: relative;
   top: 50px;
   left: 100px;
-  font-size: 25px;
   margin: 0 90px;
-  text-align: left;
   font-family: "Roboto";
+  text-align: left;
+  font-size: 25px;
   font-style: italic;
 }
 
@@ -231,8 +234,8 @@ blockquote small.Author {
   position: relative;
   top: 70px;
   left: 50px;
-  font-size: 19px;
   font-family: "Roboto";
+  font-size: 19px;
 }
 
 @media screen and (max-width: 800px) {
@@ -242,8 +245,8 @@ blockquote small.Author {
   blockquote img.picture {
     position: relative;
     right: 170px;
-    width: 72px;
     height: 75px;
+    width: 72px;
   }
   blockquote p.quote {
     position: relative;
@@ -264,10 +267,10 @@ blockquote small.Author {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: left;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: left;
   margin: 0;
 }
 
@@ -312,18 +315,18 @@ blockquote small.Author {
   font-size: 25px;
 }
 
-.popularChallenges .checked {
+.popularChallenges span {
   color: #E3170A;
 }
 
 .popularChallenges small {
-  font-size: 12px;
   margin-left: 150px;
+  font-size: 12px;
 }
 
 .popularChallenges p {
-  font-size: 15px;
   padding: 15px 0px;
+  font-size: 15px;
 }
 
 .popularChallenges .pCbutton {
@@ -332,12 +335,12 @@ blockquote small.Author {
   left: 130px;
   height: 40px;
   width: 200px;
-  font-size: 18px;
   padding: 5px;
-  border-radius: 4px;
   border-style: none;
-  background-color: #E3170A;
+  border-radius: 4px;
+  font-size: 18px;
   color: white;
+  background-color: #E3170A;
 }
 
 ul.Challenges-ul {
@@ -405,9 +408,9 @@ ul.Challenges-ul a.Onsite {
 @media screen and (max-width: 800px) {
   .secondHeader {
     font-size: 34px;
-    bottom: 70px;
   }
   .popularChallenges {
+    height: 600px;
     width: 890px;
   }
   .popularChallenges .pCcard3 {
@@ -439,19 +442,22 @@ ul.Challenges-ul a.Onsite {
     font-family: "Roboto";
     background-color: transparent;
     position: relative;
-    top: 30px;
+    top: -40px;
     left: 85px;
+  }
+  ul.Challenges-ul li.onlineChallenges a.Online {
+    text-decoration: underline;
+    color: #36769D;
   }
   ul.Challenges-ul li.onsiteChallenges {
     position: relative;
-    bottom: 90px;
+    bottom: 160px;
     left: 33px;
-    width: 308px;
     height: 66px;
+    width: 308px;
   }
-  ul.Challenges-ul a.Online {
-    color: #36769D;
-    text-decoration: underline;
+  ul.Challenges-ul li.onsiteChallenges a.Onsite {
+    margin-top: 10px;
   }
 }
 
@@ -462,8 +468,8 @@ ul.Challenges-ul a.Onsite {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 1280px;
   height: 400px;
+  width: 1280px;
   margin-top: 200px;
   background-color: #011827;
 }
@@ -471,41 +477,41 @@ ul.Challenges-ul a.Onsite {
 .story h3.story {
   position: relative;
   top: -60px;
+  padding: 0px 200px;
   text-align: center;
   font-size: 25px;
-  padding: 0px 200px;
-  color: white;
   font-weight: lighter;
+  color: white;
 }
 
 button {
   position: relative;
   bottom: 100px;
   left: 10px;
-  font-size: 20px;
-  width: 270px;
   height: 50px;
+  width: 270px;
   padding: 10px;
+  border-radius: 6px;
+  border-color: #8ACFE5;
+  font-size: 20px;
+  font-weight: bold;
   color: #8ACFE5;
   background-color: #011827;
-  border-color: #8ACFE5;
-  border-radius: 6px;
-  font-weight: bold;
 }
 
 @media screen and (max-width: 800px) {
   .story {
-    width: 480px;
     height: 500px;
+    width: 480px;
     margin-top: 100px;
   }
   .story h3.story {
-    padding: 10px 30px;
     top: 10px;
+    padding: 10px 30px;
   }
   button {
-    width: 308px;
     height: 66px;
+    width: 308px;
     margin-top: 40px;
   }
 }
@@ -520,34 +526,72 @@ button {
   margin-bottom: 200px;
 }
 
-.booking img.pic0 {
+.booking .bookBox0 img.pic0 {
   height: 50%;
   width: 100%;
   margin-top: -10px;
 }
 
-.booking img.pic1 {
-  height: 50%;
-  width: 100%;
-  margin-top: -65px;
-}
-
-.booking .BookingtextBox {
-  text-align: left;
+.booking .bookBox0 .BookingtextBox0 {
   height: 50%;
   margin: 20px;
   padding: 0px 100px;
+  text-align: left;
 }
 
-.booking .BookingtextBox .bookingHeading {
+.booking .bookBox0 .BookingtextBox0 .bookingHeading0 {
   font-size: 35px;
 }
 
-.booking .BookingtextBox .textBook {
+.booking .bookBox0 .BookingtextBox0 .textBook0 {
   font-size: 20px;
 }
 
-.booking .BookingtextBox button.Btn {
+.booking .bookBox0 .BookingtextBox0 button.Btn0 {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 250px;
+  background-color: #E3170A;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  margin-right: 10px;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.booking .bookBox1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.booking .bookBox1 img.pic1 {
+  height: 51%;
+  width: 100%;
+}
+
+.booking .bookBox1 .BookingtextBox1 {
+  height: 50%;
+  margin: 20px;
+  padding: 0px 100px;
+  text-align: left;
+}
+
+.booking .bookBox1 .BookingtextBox1 .bookingHeading1 {
+  font-size: 35px;
+}
+
+.booking .bookBox1 .BookingtextBox1 .textBook1 {
+  font-size: 20px;
+}
+
+.booking .bookBox1 .BookingtextBox1 button.Btn1 {
   position: relative;
   left: 0px;
   top: 0px;
@@ -568,52 +612,65 @@ button {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .booking img.pic0 {
+  .booking .bookBox0 img.pic0 {
     height: 300px;
     width: 480px;
-    margin-top: -76px;
+    margin-top: -75px;
   }
-  .booking img.pic1 {
-    height: 300px;
-    width: 100%;
-    margin-top: -65px;
+  .booking .bookBox0 .BookingtextBox0 {
+    margin: 15px;
+    padding: 0px;
+    text-align: left;
   }
-  .booking .BookingtextBox {
-    padding: 0px 0px;
-  }
-  .booking .BookingtextBox .bookingHeading {
+  .booking .bookBox0 .BookingtextBox0 .bookingHeading0 {
     font-size: 32px;
   }
-  .booking .BookingtextBox .textBook {
+  .booking .bookBox0 .BookingtextBox0 .textBook0 {
     font-size: 24px;
   }
-  .booking .BookingtextBox button.Btn {
-    position: relative;
-    left: 0px;
-    top: 0px;
-    width: 250px;
-    background-color: #E3170A;
-    color: white;
-    font-size: 20px;
-    padding: 10px;
-    margin-right: 10px;
-    border-style: none;
-    border-radius: 5px;
+  .booking .bookBox0 .BookingtextBox0 button.Btn0 {
+    height: 66px;
+    width: 308px;
+  }
+  .booking .bookBox1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .booking .bookBox1 img.pic1 {
+    height: 300px;
+    width: 480px;
+    margin-top: 30px;
+  }
+  .booking .bookBox1 .BookingtextBox1 {
+    margin: 15px;
+    padding: 0px;
+  }
+  .booking .bookBox1 .BookingtextBox1 .bookingHeading1 {
+    font-size: 32px;
+  }
+  .booking .bookBox1 .BookingtextBox1 .textBook1 {
+    font-size: 24px;
+  }
+  .booking .bookBox1 .BookingtextBox1 button.Btn1 {
+    height: 66px;
+    width: 308px;
   }
 }
 
 footer {
-  height: 467px;
-  font-size: 15px;
-  background-color: #011827;
-  color: #B6BDB5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 467px;
   text-align: left;
+  font-size: 15px;
+  color: white;
+  background-color: #011827;
 }
 
 footer h4 {
@@ -631,13 +688,11 @@ footer .footerBox p {
 
 footer .footerBoxtwo {
   width: 325px;
-  padding: 100px 10px;
   margin-left: 150px;
+  padding: 100px 10px;
 }
 
 footer .footerBoxtwo ul {
-  margin-top: -10px;
-  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -645,17 +700,20 @@ footer .footerBoxtwo ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: -10px;
+  padding: 0;
   list-style: none;
 }
 
 footer .footerBoxtwo ul li a {
   text-decoration: none;
-  color: #B6BDB5;
+  color: white;
 }
 
 footer .footerBoxthree {
   width: 325px;
   padding: 100px 10px;
+  font-size: 18px;
 }
 
 footer .footerBoxthree ul {
@@ -666,9 +724,61 @@ footer .footerBoxthree ul {
 
 footer .footerBoxthree ul li.follow a {
   text-decoration: none;
-  color: #B6BDB5;
+  color: white;
 }
 
+@media screen and (max-width: 800px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 566px;
+    width: 480px;
+    padding: 50px 20px;
+    font-size: 18px;
+  }
+  footer h4 {
+    font-size: 18px;
+  }
+  footer .footerBox {
+    padding: 0px;
+    font-size: 18px;
+  }
+  footer .footerBox p {
+    margin-top: -15px;
+    padding-right: 200px;
+  }
+  footer .footerBoxtwo {
+    margin-left: 0px;
+    padding: 0px;
+  }
+  footer .footerBoxtwo ul {
+    margin-top: -15px;
+    padding: 0;
+  }
+  footer .footerBoxtwo ul.play {
+    margin-top: 5px;
+  }
+  footer .footerBoxthree {
+    padding: 0px;
+  }
+  footer .footerBoxthree ul {
+    margin-top: -15px;
+  }
+}
+
+/*inventory from site-sight
+  1.header
+  2.hero
+  3.quotes
+  4.popularChallenges
+  5.story
+  6.booking
+  7.footer
+
+  mixins-variables = All mixins and variables
+  */
 body {
   max-width: 1280px;
   font-family: "Roboto";

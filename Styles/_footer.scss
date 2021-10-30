@@ -1,55 +1,97 @@
 footer {
-  height: 467px;
-  font-size: 15px;
-  background-color: $PrimaryDarkBlue;
-  color: $PrimaryGrey;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
+  height: 467px;
   text-align: left;
-
-  h4{
+  font-size: 15px;
+  color: white;
+  background-color: $PrimaryDarkBlue;
+  h4 {
     font-weight: bold;
   }
-
+  //first
   .footerBox {
-   width: 650px;
-   padding: 100px 100px;
+    width: 650px;
+    padding: 100px 100px;
     p {
       margin-top: -10px;
     }
   }
-
+  //second
   .footerBoxtwo {
     width: 325px;
-    padding: 100px 10px;
     margin-left: 150px;
+    padding: 100px 10px;
     ul {
-      margin-top: -10px;
-      padding: 0;
       display: flex;
       flex-direction: column;
+      margin-top: -10px;
+      padding: 0;
       list-style: none;
       li {
         a {
           text-decoration: none;
-          color: $PrimaryGrey;
+          color: white;
         }
       }
     }
   }
+  //third
   .footerBoxthree {
     width: 325px;
     padding: 100px 10px;
+    font-size: 18px;
     ul {
       margin-top: -10px;
-      padding:0;
+      padding: 0;
       list-style: none;
       li.follow {
-        
         a {
           text-decoration: none;
-          color:$PrimaryGrey;
+          color: white;
         }
+      }
+    }
+  }
+}
+
+//media screen
+@media screen and (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    height: 566px;
+    width: 480px;
+    padding: 50px 20px;
+    font-size: 18px;
+    h4 {
+      font-size: 18px;
+    }
+    //first
+    .footerBox {
+      padding: 0px;
+      font-size: 18px;
+      p {
+        margin-top: -15px;
+        padding-right: 200px;
+      }
+    }
+    //second
+    .footerBoxtwo {
+      margin-left: 0px;
+      padding: 0px;
+      ul {
+        margin-top: -15px;
+        padding: 0;
+      }
+      ul.play {
+        margin-top: 5px;
+      }
+    }
+    //third
+    .footerBoxthree {
+      padding: 0px;
+      ul {
+        margin-top: -15px;
       }
     }
   }

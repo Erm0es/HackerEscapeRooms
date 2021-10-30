@@ -1,93 +1,112 @@
-
 .booking {
   display: flex;
   height: auto;
   width: auto;
   margin-top: 100px;
   margin-bottom: 200px;
-
-
+  //first box
+  .bookBox0 {
     img.pic0 {
-    height: 50%;
-    width: 100%;
-    margin-top:-10px;
-   }
+      height: 50%;
+      width: 100%;
+      margin-top: -10px;
+    }
+    //Text in box
+    .BookingtextBox0 {
+      height: 50%;
+      margin: 20px;
+      padding: 0px 100px;
+      text-align: left;
+      .bookingHeading0 {
+        font-size: 35px;
+      }
+      .textBook0 {
+        font-size: 20px;
+      }
+      button.Btn0 {
+        @include bookingBtn();
+      }
+    }
+  }
+  //Second box
+  .bookBox1 {
+    display: flex;
+    flex-direction: column-reverse;
     img.pic1 {
-    height: 50%;
-    width: 100%;
-    margin-top: -65px;
+      height: 51%;
+      width: 100%;
     }
-
-  //Text
-  .BookingtextBox {
-  text-align: left;
-  height: 50%;
-  margin: 20px;
-  padding: 0px 100px;
- 
-    .bookingHeading {
-    font-size: 35px;
-    
+    //Text in box
+    .BookingtextBox1 {
+      height: 50%;
+      margin: 20px;
+      padding: 0px 100px;
+      text-align: left;
+      .bookingHeading1 {
+        font-size: 35px;
+      }
+      .textBook1 {
+        font-size: 20px;
+      }
+      button.Btn1 {
+        @include bookingBtn();
+      }
     }
-    .textBook {
-    font-size: 20px;
-   }
-   //Buttons
-    button.Btn {
-    position: relative;
-    left:0px;
-    top:0px;
-    width: 250px;
-    background-color:$PrimaryRed ;
-    color:white;
-    font-size: 20px;
-    padding: 10px;
-    margin-right: 10px;
-    border-style: none;
-    border-radius: 5px;
   }
 }
-}
 
-@media screen and (max-width: 800px){
-
+//media screen
+@media screen and (max-width: 800px) {
   .booking {
     flex-direction: column;
+    //first box
+    .bookBox0 {
       img.pic0 {
-      height: 300px;
-      width: 480px;
-      margin-top:-76px;
-     }
+        height: 300px;
+        width: 480px;
+        margin-top: -75px;
+      }
+      //Text in box
+      .BookingtextBox0 {
+        margin: 15px;
+        padding: 0px;
+        text-align: left;
+        .bookingHeading0 {
+          font-size: 32px;
+        }
+        .textBook0 {
+          font-size: 24px;
+        }
+        button.Btn0 {
+          height: 66px;
+          width: 308px;
+        }
+      }
+    }
+    //Second box
+    .bookBox1 {
+      flex-direction: column;
       img.pic1 {
-      height:300px;
-      width: 100%;
-      margin-top: -65px;
+        height: 300px;
+        width: 480px;
+        margin-top: 30px;
       }
-  
-    //Text
-    .BookingtextBox {
-      padding: 0px 0px;
-      .bookingHeading {
-      font-size: 32px;
+      //Text in box
+      .BookingtextBox1 {
+        margin: 15px;
+        padding: 0px;
+        .bookingHeading1 {
+          font-size: 32px;
+        }
+        .textBook1 {
+          font-size: 24px;
+        }
+
+        button.Btn1 {
+          height: 66px;
+          width: 308px;
+        }
       }
-      .textBook {
-      font-size: 24px;
-     }
-     //Buttons
-      button.Btn {
-      position: relative;
-      left:0px;
-      top:0px;
-      width: 250px;
-      background-color:$PrimaryRed ;
-      color:white;
-      font-size: 20px;
-      padding: 10px;
-      margin-right: 10px;
-      border-style: none;
-      border-radius: 5px;
     }
   }
-  }
-
 }
