@@ -81,7 +81,7 @@
 .hero .heroImg {
   height: 468px;
   width: 1280px;
-  background-image: url("/Pictures/image 2.JPG");
+  background-image: url("Pictures/image 2.JPG");
 }
 
 ul.ButtonLinks {
