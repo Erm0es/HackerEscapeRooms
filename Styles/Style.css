@@ -78,10 +78,10 @@
   }
 }
 
-.hero .heroImg {
+.heroImg {
   height: 468px;
   width: 1280px;
-  background-image: url("Pictures/image 2.JPG");
+  background-image: url("/Pictures/image 2.JPG");
 }
 
 ul.ButtonLinks {
@@ -146,10 +146,10 @@ ul.ButtonLinks li.Onsite a.Onsite {
 }
 
 @media screen and (max-width: 800px) {
-  .hero .heroImg {
+  .heroImg {
     height: 274px;
     width: 800px;
-    background-image: url("Pictures/image 2 (1).jpg");
+    background-image: url("/Pictures/image 2 (1).jpg");
   }
   ul.ButtonLinks {
     -webkit-box-orient: vertical;
