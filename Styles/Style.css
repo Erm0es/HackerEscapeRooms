@@ -331,8 +331,7 @@ blockquote small.Author {
 }
 
 .popularChallenges img {
-  position: relative;
-  top: 3px;
+  margin-bottom: -5px;
   height: 46%;
   width: 100%;
   border-radius: 6px 6px 0px 0px;
@@ -388,8 +387,7 @@ ul.Challenges-ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
-  top: 100px;
+  margin-top: 100px;
 }
 
 ul.Challenges-ul li.onlineChallenges {
@@ -445,7 +443,8 @@ ul.Challenges-ul a.Onsite {
 
 @media screen and (max-width: 800px) {
   .secondHeader {
-    font-size: 34px;
+    font-size: 32px;
+    padding: 0px 30px;
   }
   .popularChallenges {
     height: 600px;
@@ -459,9 +458,9 @@ ul.Challenges-ul a.Onsite {
   }
   ul.Challenges-ul {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   ul.Challenges-ul li.onlineChallenges {
     display: -webkit-box;
@@ -479,18 +478,16 @@ ul.Challenges-ul a.Onsite {
     font-size: 17px;
     font-family: "Roboto";
     background-color: transparent;
-    position: relative;
-    top: -40px;
-    left: 85px;
+    margin-top: 20px;
+    margin-left: 115px;
   }
   ul.Challenges-ul li.onlineChallenges a.Online {
     text-decoration: underline;
     color: #36769D;
   }
   ul.Challenges-ul li.onsiteChallenges {
-    position: relative;
-    bottom: 160px;
-    left: 33px;
+    margin-top: -150px;
+    margin-left: 70px;
     height: 66px;
     width: 308px;
   }
