@@ -22,10 +22,8 @@
 }
 
 .openMenu {
-  font-size: 2rem;
-  margin: 20px;
+  font-size: 50px;
   display: none;
-  cursor: pointer;
 }
 
 ul.headerMenuUL {
@@ -60,9 +58,8 @@ ul.headerMenuUL li a:hover {
 }
 
 .headerMenuUL .closeMenu, .icons i {
-  font-size: 2rem;
+  font-size: 50px;
   display: none;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 800px) {
@@ -85,13 +82,14 @@ ul.headerMenuUL li a:hover {
   }
   .headerBox .openMenu {
     display: block;
+    position: relative;
+    bottom: 190px;
+    left: 190px;
   }
   .headerBox .headerMenuUL {
-    height: 100vh;
+    height: 600px;
+    width: 480px;
     position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
     z-index: 10;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -104,8 +102,6 @@ ul.headerMenuUL li a:hover {
         -ms-flex-align: center;
             align-items: center;
     background: #011827;
-    -webkit-transition: top 1s ease;
-    transition: top 1s ease;
     display: none;
   }
   .headerBox .headerMenuUL li a {
@@ -121,11 +117,10 @@ ul.headerMenuUL li a:hover {
     display: block;
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 80px;
   }
   .headerBox .icons i {
     display: inline-block;
-    padding: 12px;
   }
 }
 
@@ -840,11 +835,5 @@ body {
 
 .container {
   text-align: center;
-}
-
-@media screen and (max-width: 800px) {
-  html {
-    max-width: 800px;
-  }
 }
 /*# sourceMappingURL=Style.css.map */

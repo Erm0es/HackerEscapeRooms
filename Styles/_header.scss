@@ -23,10 +23,9 @@
 
 //Menu
   .openMenu{
-    font-size: 2rem;
-    margin:20px;
+    font-size: 50px;
     display: none;
-    cursor: pointer;
+
   }
   ul.headerMenuUL {
     display: flex;
@@ -54,9 +53,8 @@
     }
   }
   .headerMenuUL .closeMenu , .icons i{
-    font-size: 2rem;
+    font-size: 50px;
     display: none;
-    cursor: pointer;
   }
 
 
@@ -78,23 +76,21 @@
       padding: 0px 330px;
       font-size: 24px;
     }
-  
-    
       .openMenu{
         display:block;
+        position: relative;
+        bottom:190px;
+        left:190px;
       }
       .headerMenuUL {
-        height: 100vh;
+        height: 600px;
+        width: 480px;
         position: fixed;
-        top:0;
-        right:0;
-        left:0;
         z-index:10;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background: $PrimaryDarkBlue;
-        transition: top 1s ease ;
         display: none;
         li {
           a {
@@ -113,11 +109,10 @@
        display: block;
        position: absolute;
        top:20px;
-       right: 20px;
+       right: 80px;
      }
      .icons i{
        display: inline-block;
-       padding:12px;
      }
   }    
 }
