@@ -21,11 +21,14 @@
   font-size: 40px;
 }
 
-.headerMenu {
-  margin-top: 0;
+.openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
 }
 
-.headerMenu ul.headerMenuUL {
+ul.headerMenuUL {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,41 +43,89 @@
   list-style-type: none;
 }
 
-.headerMenu li.headerli {
-  margin: 0 30px;
+ul.headerMenuUL li {
+  margin: 0px;
   padding: 0 30px;
 }
 
-.headerMenu a {
+ul.headerMenuUL li a {
+  display: inline-block;
   font-size: 20px;
   text-decoration: none;
   color: white;
 }
 
-.headerMenu a:hover {
+ul.headerMenuUL li a:hover {
   color: #8ACFE5;
+}
+
+.headerMenuUL .closeMenu, .icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 800px) {
   .headerBox {
     height: 144px;
-    width: 800px;
+    width: 100%;
   }
   .headerBox .headerLogo {
     position: relative;
-    right: 310px;
+    right: 170px;
     width: 128px;
     height: 82px;
   }
   .headerBox h1 {
     position: relative;
-    right: 195px;
+    right: 180px;
     margin-top: 5px;
     padding: 0px 330px;
     font-size: 24px;
   }
-  .headerMenu {
+  .headerBox .openMenu {
+    display: block;
+  }
+  .headerBox .headerMenuUL {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #011827;
+    -webkit-transition: top 1s ease;
+    transition: top 1s ease;
     display: none;
+  }
+  .headerBox .headerMenuUL li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+  }
+  .headerBox .headerMenuUL li a:hover {
+    color: #8ACFE5;
+  }
+  .headerBox .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .headerBox .icons i {
+    display: inline-block;
+    padding: 12px;
   }
 }
 
@@ -82,6 +133,7 @@
   height: 468px;
   width: 1280px;
   background-image: url("/Pictures/image 2.JPG");
+  background-repeat: space;
 }
 
 ul.ButtonLinks {

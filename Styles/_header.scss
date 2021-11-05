@@ -22,8 +22,12 @@
 }
 
 //Menu
-.headerMenu {
-  margin-top: 0;
+  .openMenu{
+    font-size: 2rem;
+    margin:20px;
+    display: none;
+    cursor: pointer;
+  }
   ul.headerMenuUL {
     display: flex;
     justify-content: space-evenly;
@@ -33,41 +37,87 @@
     padding-top: 0;
     font-size: 24px;
     list-style-type: none;
-  }
-  li.headerli {
-    margin: 0 30px;
-    padding: 0 30px;
-  }
-  a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    &:hover {
-      color: $PrimaryLightBlue;
+
+    li {
+      margin:0px;
+      padding: 0 30px;
+
+      a {
+        display:inline-block;
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        &:hover {
+          color: $PrimaryLightBlue;
+        }
+      }
     }
   }
-}
+  .headerMenuUL .closeMenu , .icons i{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+
 
 //media Screen
 @media screen and (max-width: 800px) {
   .headerBox {
     height: 144px;
-    width: 800px;
+    width: 100%;
     .headerLogo {
       position: relative;
-      right: 310px;
+      right:170px;
       width: 128px;
       height: 82px;
     }
     h1 {
       position: relative;
-      right: 195px;
+      right: 180px;
       margin-top: 5px;
       padding: 0px 330px;
       font-size: 24px;
     }
-  }
-  .headerMenu {
-    display: none;
-  }
+  
+    
+      .openMenu{
+        display:block;
+      }
+      .headerMenuUL {
+        height: 100vh;
+        position: fixed;
+        top:0;
+        right:0;
+        left:0;
+        z-index:10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: $PrimaryDarkBlue;
+        transition: top 1s ease ;
+        display: none;
+        li {
+          a {
+            display: inline-block;
+            padding:15px;
+            text-decoration: none;
+            color:white;
+            
+            &:hover {
+              color: $PrimaryLightBlue;
+            }
+          }
+        }
+      }
+     .closeMenu{
+       display: block;
+       position: absolute;
+       top:20px;
+       right: 20px;
+     }
+     .icons i{
+       display: inline-block;
+       padding:12px;
+     }
+  }    
 }
