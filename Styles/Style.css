@@ -120,7 +120,7 @@ ul.headerMenuUL li a:hover {
 
 .heroImg {
   height: 468px;
-  width: 1280px;
+  width: 100%;
   background-image: url("/Pictures/image 2.JPG");
   background-repeat: space;
 }
@@ -132,8 +132,7 @@ ul.ButtonLinks {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
-  top: -50px;
+  margin-top: -30px;
 }
 
 ul.ButtonLinks li.Online {
@@ -189,14 +188,13 @@ ul.ButtonLinks li.Onsite a.Onsite {
 @media screen and (max-width: 800px) {
   .heroImg {
     height: 274px;
-    width: 800px;
     background-image: url("/Pictures/image 2 (1).jpg");
   }
   ul.ButtonLinks {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   ul.ButtonLinks li.Online {
     display: -webkit-box;
@@ -214,18 +212,16 @@ ul.ButtonLinks li.Onsite a.Onsite {
     font-size: 17px;
     font-family: "Roboto";
     background-color: transparent;
-    position: relative;
-    top: 170px;
-    left: 85px;
+    margin-top: 20px;
+    margin-left: 90px;
   }
   ul.ButtonLinks li.Online a.Online {
     text-decoration: underline;
     color: #36769D;
   }
   ul.ButtonLinks li.Onsite {
-    position: relative;
-    top: 50px;
-    left: 33px;
+    margin-top: 50px;
+    margin-left: 50px;
     height: 66px;
     width: 308px;
   }
