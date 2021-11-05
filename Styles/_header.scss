@@ -1,7 +1,7 @@
 //Header
 .headerBox {
   height: 216px;
-  width: 1280px;
+  width: 100%;
   font-weight: bold;
   color: white;
   background-color: $PrimaryDarkBlue;
@@ -14,33 +14,27 @@
     width: 128px;
   }
   h1 {
-    position: relative;
-    top: -70px;
-    right: 260px;
+    margin-top:-30px;
+    margin-left:-550px;
     font-size: 40px;
   }
 }
 
 //Menu
   .openMenu{
-    font-size: 50px;
     display: none;
-
+    font-size: 50px;
   }
   ul.headerMenuUL {
     display: flex;
     justify-content: space-evenly;
-    position: relative;
-    top: -30px;
-    margin-top: 0;
-    padding-top: 0;
+    margin-top: 50px;
+    padding: 10px 100px;
     font-size: 24px;
     list-style-type: none;
-
     li {
       margin:0px;
       padding: 0 30px;
-
       a {
         display:inline-block;
         font-size: 20px;
@@ -53,8 +47,8 @@
     }
   }
   .headerMenuUL .closeMenu , .icons i{
-    font-size: 50px;
     display: none;
+    font-size: 50px;
   }
 
 
@@ -70,16 +64,15 @@
       height: 82px;
     }
     h1 {
-      position: relative;
-      right: 180px;
-      margin-top: 5px;
-      padding: 0px 330px;
+      margin-top: -60px;
+      margin-left:-140px;
+      padding: 0px 300px;
       font-size: 24px;
     }
       .openMenu{
         display:block;
         position: relative;
-        bottom:190px;
+        bottom:120px;
         left:190px;
       }
       .headerMenuUL {
@@ -98,7 +91,6 @@
             padding:15px;
             text-decoration: none;
             color:white;
-            
             &:hover {
               color: $PrimaryLightBlue;
             }
@@ -108,8 +100,6 @@
      .closeMenu{
        display: block;
        position: absolute;
-       top:20px;
-       right: 80px;
      }
      .icons i{
        display: inline-block;
