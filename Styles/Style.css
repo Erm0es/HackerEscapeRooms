@@ -479,7 +479,7 @@ ul.Challenges-ul a.Onsite {
     font-family: "Roboto";
     background-color: transparent;
     margin-top: 20px;
-    margin-left: 115px;
+    margin-left: 90px;
   }
   ul.Challenges-ul li.onlineChallenges a.Online {
     text-decoration: underline;
@@ -487,7 +487,7 @@ ul.Challenges-ul a.Onsite {
   }
   ul.Challenges-ul li.onsiteChallenges {
     margin-top: -150px;
-    margin-left: 70px;
+    margin-left: 50px;
     height: 66px;
     width: 308px;
   }

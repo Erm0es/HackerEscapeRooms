@@ -121,7 +121,7 @@ ul.Challenges-ul {
     li.onlineChallenges {
       @include LinkDecor();
       margin-top:20px;
-      margin-left:115px;
+      margin-left:90px;
       a.Online {
         text-decoration: underline;
         color: $PrimaryBlue;
@@ -130,7 +130,7 @@ ul.Challenges-ul {
     //On site button
     li.onsiteChallenges {
       margin-top:-150px;
-      margin-left:70px;
+      margin-left:50px;
       height: 66px;
       width: 308px;
       a.Onsite {
