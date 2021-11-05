@@ -250,7 +250,7 @@ blockquote .blockTwo {
 
 blockquote img.picture {
   position: relative;
-  top: 150px;
+  top: 170px;
   right: 200px;
   height: 120px;
   width: 120px;
@@ -270,8 +270,7 @@ blockquote p.quote {
 blockquote small.Author {
   position: relative;
   top: 70px;
-  left: 50px;
-  font-family: "Roboto";
+  left: 60px;
   font-size: 19px;
 }
 
@@ -280,16 +279,18 @@ blockquote small.Author {
     display: none;
   }
   blockquote img.picture {
-    position: relative;
+    top: 150px;
     right: 170px;
     height: 75px;
     width: 72px;
   }
   blockquote p.quote {
-    position: relative;
     top: 60px;
     margin-left: -13px;
     font-size: 24px;
+  }
+  blockquote small.Author {
+    left: 50px;
   }
 }
 

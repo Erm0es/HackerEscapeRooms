@@ -11,7 +11,7 @@ blockquote {
   //Picture
   img.picture {
     position: relative;
-    top: 150px;
+    top: 170px;
     right: 200px;
     height: 120px;
     width: 120px;
@@ -31,8 +31,7 @@ blockquote {
   small.Author {
     position: relative;
     top: 70px;
-    left: 50px;
-    font-family: "Roboto";
+    left: 60px;
     font-size: 19px;
   }
 }
@@ -44,16 +43,19 @@ blockquote {
   }
   blockquote {
     img.picture {
-      position: relative;
+      top:150px;
       right: 170px;
       height: 75px;
       width: 72px;
     }
     p.quote {
-      position: relative;
       top: 60px;
       margin-left: -13px;
       font-size: 24px;
+    }
+    small.Author{
+      left:50px;
+
     }
   }
 }
