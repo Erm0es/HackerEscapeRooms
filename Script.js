@@ -9,10 +9,12 @@ closeMenu.addEventListener('click',close);
 
 function show(){
 headerMenuUL.style.display = 'flex';
-headerMenuUL.style.top = '0';
+headerMenuUL.style.top = '-10px';
+
+
 
 }
 
 function close(){
-  headerMenuUL.style.top = '-100%';
+  headerMenuUL.style.top = '-300%';
 }

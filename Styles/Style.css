@@ -1,4 +1,5 @@
 .headerBox {
+  display: inline-block;
   height: 216px;
   width: 100%;
   font-weight: bold;
@@ -80,13 +81,10 @@ ul.headerMenuUL li a:hover {
     display: block;
     position: relative;
     bottom: 120px;
-    left: 190px;
+    left: 180px;
   }
   .headerBox .headerMenuUL {
-    height: 600px;
-    width: 480px;
-    position: fixed;
-    z-index: 10;
+    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -97,12 +95,25 @@ ul.headerMenuUL li a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    right: 0;
+    z-index: 10;
+    height: 914px;
+    width: 240px;
+    -webkit-box-shadow: 5px 10px 10px 100px rgba(255, 255, 255, 0.5);
+            box-shadow: 5px 10px 10px 100px rgba(255, 255, 255, 0.5);
+    -webkit-animation: fadeIn 0.2s;
+            animation: fadeIn 0.2s;
+    -webkit-transform: translate(50% 50%);
+            transform: translate(50% 50%);
     background: #011827;
-    display: none;
   }
   .headerBox .headerMenuUL li a {
     display: inline-block;
-    padding: 15px;
+    padding: 40px 0px;
+    font-size: 25px;
     text-decoration: none;
     color: white;
   }
@@ -112,9 +123,42 @@ ul.headerMenuUL li a:hover {
   .headerBox .closeMenu {
     display: block;
     position: absolute;
+    top: 10px;
+    right: 30px;
+    background: transparent;
   }
   .headerBox .icons i {
     display: inline-block;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -122,7 +166,7 @@ ul.headerMenuUL li a:hover {
   height: 468px;
   width: 100%;
   background-image: url("/Pictures/image 2.JPG");
-  background-repeat: space;
+  background-repeat: no-repeat;
 }
 
 ul.ButtonLinks {
@@ -187,6 +231,7 @@ ul.ButtonLinks li.Onsite a.Onsite {
 
 @media screen and (max-width: 800px) {
   .heroImg {
+    margin-top: -39px;
     height: 274px;
     background-image: url("/Pictures/image 2 (1).jpg");
   }
@@ -220,7 +265,7 @@ ul.ButtonLinks li.Onsite a.Onsite {
     color: #36769D;
   }
   ul.ButtonLinks li.Onsite {
-    margin-top: 50px;
+    margin-top: 70px;
     margin-left: 50px;
     height: 66px;
     width: 308px;

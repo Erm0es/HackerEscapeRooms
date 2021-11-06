@@ -3,7 +3,7 @@
     height: 468px;
     width: 100%;
     background-image: url("/Pictures/image\ 2.JPG");
-    background-repeat: space;
+    background-repeat:no-repeat;
   }
 
 //Button Links
@@ -32,6 +32,7 @@ ul.ButtonLinks {
 //media screen
 @media screen and (max-width: 800px) {
     .heroImg {
+      margin-top:-39px;
       height: 274px;
       background-image: url("/Pictures/image\ 2\ \(1\).jpg");
     }
@@ -48,7 +49,7 @@ ul.ButtonLinks {
       }
     }
     li.Onsite {
-     margin-top:50px;
+     margin-top:70px;
      margin-left:50px;
       height: 66px;
       width: 308px;
