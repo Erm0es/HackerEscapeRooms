@@ -26,14 +26,18 @@ footer {
       display: flex;
       flex-direction: column;
       margin-top: -10px;
-      padding: 0;
+      padding: 0px;
       list-style: none;
       li {
         a {
+          
           text-decoration: none;
           color: white;
         }
       }
+    }
+    ul.play{
+     margin-top:20px;
     }
   }
   //third

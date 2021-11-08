@@ -1,11 +1,11 @@
 //Header
 .headerBox {
+  display:inline-block;
   height: 216px;
-  width: 1280px;
+  width: 100%;
   font-weight: bold;
   color: white;
   background-color: $PrimaryDarkBlue;
-
   .headerLogo {
     position: relative;
     top: 20px;
@@ -14,60 +14,120 @@
     width: 128px;
   }
   h1 {
-    position: relative;
-    top: -70px;
-    right: 260px;
+    margin-top:-30px;
+    margin-left:-550px;
     font-size: 40px;
   }
 }
 
 //Menu
-.headerMenu {
-  margin-top: 0;
+  .openMenu{
+    display: none;
+    font-size: 50px;
+  }
   ul.headerMenuUL {
     display: flex;
     justify-content: space-evenly;
-    position: relative;
-    top: -30px;
-    margin-top: 0;
-    padding-top: 0;
+    margin-top: 50px;
+    padding: 10px 100px;
     font-size: 24px;
     list-style-type: none;
-  }
-  li.headerli {
-    margin: 0 30px;
-    padding: 0 30px;
-  }
-  a {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    &:hover {
-      color: $PrimaryLightBlue;
+    li {
+      margin:0px;
+      padding: 0 30px;
+      a {
+        display:inline-block;
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        &:hover {
+          color: $PrimaryLightBlue;
+        }
+      }
     }
   }
-}
+  .headerMenuUL .closeMenu , .icons i{
+    display: none;
+    font-size: 50px;
+  }
 
 //media Screen
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px){
   .headerBox {
     height: 144px;
-    width: 800px;
+    width: 100%;
     .headerLogo {
       position: relative;
-      right: 310px;
+      right:170px;
       width: 128px;
       height: 82px;
     }
     h1 {
-      position: relative;
-      right: 195px;
-      margin-top: 5px;
-      padding: 0px 330px;
+      margin-top: -60px;
+      margin-left:-140px;
+      padding: 0px 300px;
       font-size: 24px;
     }
+      .openMenu{
+        display:block;
+        position: relative;
+        bottom:120px;
+        left:180px;
+      }
+      .headerMenuUL {
+        display: none;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        position: absolute;
+        top:40px;
+        left:25px;
+        right:0;
+        z-index:10;
+        height: 914px;
+        width: 240px;
+        box-shadow: 5px 10px 10px 100px rgba(255, 255, 255, 0.5);
+        animation: fadeIn 0.2s;
+        transform:translate(50% 50%);
+        background: $PrimaryDarkBlue;
+        li {
+          a {
+             display: inline-block;
+             padding:40px 0px;
+             font-size: 25px;
+             text-decoration: none;
+             color:white;
+             &:hover {
+              color: $PrimaryLightBlue;
+            }
+          }
+        }
+      }
+     .closeMenu{
+       display: block;
+       position: absolute;
+       top:10px;
+       right:30px;
+       background: transparent;
+     }
+     .icons i{
+       display: inline-block;
+     } 
+  }    
+}
+//menu fade-in
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
   }
-  .headerMenu {
-    display: none;
+  33%{
+    opacity:0;
+  }
+  75%{
+    opacity:0.5;
+  }
+  100%{
+    opacity: 1;
   }
 }
+    

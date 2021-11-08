@@ -1,6 +1,7 @@
 .headerBox {
+  display: inline-block;
   height: 216px;
-  width: 1280px;
+  width: 100%;
   font-weight: bold;
   color: white;
   background-color: #011827;
@@ -15,73 +16,157 @@
 }
 
 .headerBox h1 {
-  position: relative;
-  top: -70px;
-  right: 260px;
+  margin-top: -30px;
+  margin-left: -550px;
   font-size: 40px;
 }
 
-.headerMenu {
-  margin-top: 0;
+.openMenu {
+  display: none;
+  font-size: 50px;
 }
 
-.headerMenu ul.headerMenuUL {
+ul.headerMenuUL {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  position: relative;
-  top: -30px;
-  margin-top: 0;
-  padding-top: 0;
+  margin-top: 50px;
+  padding: 10px 100px;
   font-size: 24px;
   list-style-type: none;
 }
 
-.headerMenu li.headerli {
-  margin: 0 30px;
+ul.headerMenuUL li {
+  margin: 0px;
   padding: 0 30px;
 }
 
-.headerMenu a {
+ul.headerMenuUL li a {
+  display: inline-block;
   font-size: 20px;
   text-decoration: none;
   color: white;
 }
 
-.headerMenu a:hover {
+ul.headerMenuUL li a:hover {
   color: #8ACFE5;
+}
+
+.headerMenuUL .closeMenu, .icons i {
+  display: none;
+  font-size: 50px;
 }
 
 @media screen and (max-width: 800px) {
   .headerBox {
     height: 144px;
-    width: 800px;
+    width: 100%;
   }
   .headerBox .headerLogo {
     position: relative;
-    right: 310px;
+    right: 170px;
     width: 128px;
     height: 82px;
   }
   .headerBox h1 {
-    position: relative;
-    right: 195px;
-    margin-top: 5px;
-    padding: 0px 330px;
+    margin-top: -60px;
+    margin-left: -140px;
+    padding: 0px 300px;
     font-size: 24px;
   }
-  .headerMenu {
+  .headerBox .openMenu {
+    display: block;
+    position: relative;
+    bottom: 120px;
+    left: 180px;
+  }
+  .headerBox .headerMenuUL {
     display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    right: 0;
+    z-index: 10;
+    height: 914px;
+    width: 240px;
+    -webkit-box-shadow: 5px 10px 10px 100px rgba(255, 255, 255, 0.5);
+            box-shadow: 5px 10px 10px 100px rgba(255, 255, 255, 0.5);
+    -webkit-animation: fadeIn 0.2s;
+            animation: fadeIn 0.2s;
+    -webkit-transform: translate(50% 50%);
+            transform: translate(50% 50%);
+    background: #011827;
+  }
+  .headerBox .headerMenuUL li a {
+    display: inline-block;
+    padding: 40px 0px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+  }
+  .headerBox .headerMenuUL li a:hover {
+    color: #8ACFE5;
+  }
+  .headerBox .closeMenu {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    background: transparent;
+  }
+  .headerBox .icons i {
+    display: inline-block;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
 .heroImg {
   height: 468px;
-  width: 1280px;
+  width: 100%;
   background-image: url("/Pictures/image 2.JPG");
+  background-repeat: no-repeat;
 }
 
 ul.ButtonLinks {
@@ -91,8 +176,7 @@ ul.ButtonLinks {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
-  top: -50px;
+  margin-top: -30px;
 }
 
 ul.ButtonLinks li.Online {
@@ -147,15 +231,15 @@ ul.ButtonLinks li.Onsite a.Onsite {
 
 @media screen and (max-width: 800px) {
   .heroImg {
+    margin-top: -39px;
     height: 274px;
-    width: 800px;
     background-image: url("/Pictures/image 2 (1).jpg");
   }
   ul.ButtonLinks {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   ul.ButtonLinks li.Online {
     display: -webkit-box;
@@ -173,18 +257,16 @@ ul.ButtonLinks li.Onsite a.Onsite {
     font-size: 17px;
     font-family: "Roboto";
     background-color: transparent;
-    position: relative;
-    top: 170px;
-    left: 85px;
+    margin-top: 20px;
+    margin-left: 90px;
   }
   ul.ButtonLinks li.Online a.Online {
     text-decoration: underline;
     color: #36769D;
   }
   ul.ButtonLinks li.Onsite {
-    position: relative;
-    top: 50px;
-    left: 33px;
+    margin-top: 70px;
+    margin-left: 50px;
     height: 66px;
     width: 308px;
   }
@@ -213,7 +295,7 @@ blockquote .blockTwo {
 
 blockquote img.picture {
   position: relative;
-  top: 150px;
+  top: 170px;
   right: 200px;
   height: 120px;
   width: 120px;
@@ -233,8 +315,7 @@ blockquote p.quote {
 blockquote small.Author {
   position: relative;
   top: 70px;
-  left: 50px;
-  font-family: "Roboto";
+  left: 60px;
   font-size: 19px;
 }
 
@@ -243,16 +324,18 @@ blockquote small.Author {
     display: none;
   }
   blockquote img.picture {
-    position: relative;
+    top: 150px;
     right: 170px;
     height: 75px;
     width: 72px;
   }
   blockquote p.quote {
-    position: relative;
     top: 60px;
     margin-left: -13px;
     font-size: 24px;
+  }
+  blockquote small.Author {
+    left: 50px;
   }
 }
 
@@ -293,8 +376,7 @@ blockquote small.Author {
 }
 
 .popularChallenges img {
-  position: relative;
-  top: 3px;
+  margin-bottom: -5px;
   height: 46%;
   width: 100%;
   border-radius: 6px 6px 0px 0px;
@@ -350,8 +432,7 @@ ul.Challenges-ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
-  top: 100px;
+  margin-top: 100px;
 }
 
 ul.Challenges-ul li.onlineChallenges {
@@ -407,7 +488,8 @@ ul.Challenges-ul a.Onsite {
 
 @media screen and (max-width: 800px) {
   .secondHeader {
-    font-size: 34px;
+    font-size: 32px;
+    padding: 0px 30px;
   }
   .popularChallenges {
     height: 600px;
@@ -421,9 +503,9 @@ ul.Challenges-ul a.Onsite {
   }
   ul.Challenges-ul {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   ul.Challenges-ul li.onlineChallenges {
     display: -webkit-box;
@@ -441,18 +523,16 @@ ul.Challenges-ul a.Onsite {
     font-size: 17px;
     font-family: "Roboto";
     background-color: transparent;
-    position: relative;
-    top: -40px;
-    left: 85px;
+    margin-top: 20px;
+    margin-left: 90px;
   }
   ul.Challenges-ul li.onlineChallenges a.Online {
     text-decoration: underline;
     color: #36769D;
   }
   ul.Challenges-ul li.onsiteChallenges {
-    position: relative;
-    bottom: 160px;
-    left: 33px;
+    margin-top: -150px;
+    margin-left: 50px;
     height: 66px;
     width: 308px;
   }
@@ -524,6 +604,16 @@ button {
   width: auto;
   margin-top: 100px;
   margin-bottom: 200px;
+}
+
+.booking .bookBox0 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .booking .bookBox0 img.pic0 {
@@ -620,7 +710,6 @@ button {
   .booking .bookBox0 .BookingtextBox0 {
     margin: 15px;
     padding: 0px;
-    text-align: left;
   }
   .booking .bookBox0 .BookingtextBox0 .bookingHeading0 {
     font-size: 32px;
@@ -701,13 +790,17 @@ footer .footerBoxtwo ul {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: -10px;
-  padding: 0;
+  padding: 0px;
   list-style: none;
 }
 
 footer .footerBoxtwo ul li a {
   text-decoration: none;
   color: white;
+}
+
+footer .footerBoxtwo ul.play {
+  margin-top: 20px;
 }
 
 footer .footerBoxthree {
@@ -788,11 +881,5 @@ body {
 
 .container {
   text-align: center;
-}
-
-@media screen and (max-width: 800px) {
-  html {
-    max-width: 800px;
-  }
 }
 /*# sourceMappingURL=Style.css.map */

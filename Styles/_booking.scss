@@ -6,6 +6,8 @@
   margin-bottom: 200px;
   //first box
   .bookBox0 {
+    display: flex;
+    flex-direction: column;
     img.pic0 {
       height: 50%;
       width: 100%;
@@ -70,7 +72,6 @@
       .BookingtextBox0 {
         margin: 15px;
         padding: 0px;
-        text-align: left;
         .bookingHeading0 {
           font-size: 32px;
         }

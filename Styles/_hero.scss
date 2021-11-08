@@ -1,16 +1,16 @@
 //HeroImg
   .heroImg {
     height: 468px;
-    width: 1280px;
+    width: 100%;
     background-image: url("/Pictures/image\ 2.JPG");
+    background-repeat:no-repeat;
   }
 
 //Button Links
 ul.ButtonLinks {
   display: flex;
   justify-content: center;
-  position: relative;
-  top: -50px;
+  margin-top:-30px;
   li.Online {
     @include LiMainDecor();
     background-color: $PrimaryRed;
@@ -32,27 +32,25 @@ ul.ButtonLinks {
 //media screen
 @media screen and (max-width: 800px) {
     .heroImg {
+      margin-top:-39px;
       height: 274px;
-      width: 800px;
-      background-image: url("Pictures/image\ 2\ \(1\).jpg");
+      background-image: url("/Pictures/image\ 2\ \(1\).jpg");
     }
   
   ul.ButtonLinks {
-    flex-direction: column;
+    flex-direction: column-reverse;
     li.Online {
       @include LinkDecor();
-      position: relative;
-      top: 170px;
-      left: 85px;
+      margin-top:20px;
+      margin-left:90px;
       a.Online {
         text-decoration: underline;
         color: $PrimaryBlue;
       }
     }
     li.Onsite {
-      position: relative;
-      top: 50px;
-      left: 33px;
+     margin-top:70px;
+     margin-left:50px;
       height: 66px;
       width: 308px;
       a.Onsite {
